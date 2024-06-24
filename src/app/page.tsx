@@ -31,6 +31,7 @@ const index = () => {
         <div id="smooth-content">
           <main>
             <HeroHomeOne />
+            <BrandHomeOne style_2={true} />
             <MarqueeAreaHomeOne />
             <AboutHomeOne />
             <ServiceHomeOne />
