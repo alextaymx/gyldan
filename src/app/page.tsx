@@ -24,7 +24,6 @@ import VideoPopup from "@/components/modals/VideoPopup";
 
 const index = () => {
   const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
-  console.log("hi");
   return (
     <Wrapper>
       <HeaderOne />

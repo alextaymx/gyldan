@@ -344,6 +344,7 @@
 .cs_site_branding {
     display: inline-block;
     img {
+        max-width: 94px;
         max-height: 45px;
     }
 }
@@ -828,6 +829,7 @@
         margin-right: 0;
     }
     .cs_site_branding img {
+        max-width: 94px;
         max-height: 32px;
     }
     .cs_site_header.cs_style1 .cs_btn {
