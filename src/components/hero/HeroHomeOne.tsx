@@ -15,12 +15,12 @@ const hero_slider: DataType[] = [
     img: `/assets/img/hero_img_1.jpg`,
     sub_title: "Gyldan Group",
     title: "Your Success. Our Expertise.",
-    des: `Empowering Success Across Diverse Horizons: Your Gateway to Expert Business Outsourcing, Property Management, Talent Discovery, and Financial Advisory Solutions.`,
+    des: `Empowering success through expert business outsourcing, property management, talent discovery, and financial advisory solutions.`,
   },
   {
     img: `/assets/img/hero_img_1.jpg`,
     sub_title: "GYLDAN CORPORATE ADVISORY",
-    title: "Corporate Advisory Services",
+    title: "Corporate Advisory",
     des: `Comprehensive services for startups and enterprises: business setup, accounting, taxation, compliance, and more.`,
   },
   {
