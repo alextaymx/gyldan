@@ -53,7 +53,7 @@ const SubscribeHomeOne = () => {
             <div className="cs_section_heading_text">
               <h2 className="cs_section_title anim_text_upanddowns">
                 Stay Ahead With Our Top Notch <br />
-                Digital Services
+                Services
               </h2>
             </div>
           </div>
