@@ -126,22 +126,28 @@ export const menuData: MenuDataType[] = [
   },
   {
     id: 6,
-    title: "Blog",
-    link: "/blog",
-    has_dropdown: true,
-    sub_menu: [
-      {
-        id: 1,
-        title: "Blog",
-        link: "/blog",
-      },
-      {
-        id: 2,
-        title: "Blog Details",
-        link: "/blog-details",
-      },
-    ],
+    title: "Corporate Advisory",
+    link: "/corporate-advisory",
+    has_dropdown: false,
   },
+  //   {
+  //     id: 6,
+  //     title: "Blog",
+  //     link: "/blog",
+  //     has_dropdown: true,
+  //     sub_menu: [
+  //       {
+  //         id: 1,
+  //         title: "Blog",
+  //         link: "/blog",
+  //       },
+  //       {
+  //         id: 2,
+  //         title: "Blog Details",
+  //         link: "/blog-details",
+  //       },
+  //     ],
+  //   },
   {
     id: 7,
     title: "Contact",

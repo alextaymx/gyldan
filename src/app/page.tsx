@@ -17,6 +17,7 @@ import BrandHomeOne from "@/components/brand/BrandHomeOne";
 import FooterOne from "@/layouts/footers/FooterOne";
 import Wrapper from "@/layouts/Wrapper";
 import VideoPopup from "@/components/modals/VideoPopup";
+import HeroHomeFour from "@/components/hero/HeroHomeFour";
 
 // export const metadata = {
 //   title: "Vixan - Digital  Creative Agency Next js Template",
@@ -30,8 +31,8 @@ const index = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <HeroHomeOne />
-            <BrandHomeOne style_2={true} />
+            <HeroHomeFour />
+            {/* <HeroHomeOne /> */}
             <AboutHomeOne />
             <ServiceHomeOne />
             <PortfolioHomeOne />
@@ -40,7 +41,9 @@ const index = () => {
             <FunFactHomeOne />
             <VideoHomeOne setIsVideoOpen={setIsVideoOpen} />
             <BlogHomeOne />
+
             <SubscribeHomeOne />
+            {/* <BrandHomeOne style_2={true} /> */}
             <BrandHomeOne style_2={false} />
             <MarqueeAreaHomeOne />
           </main>

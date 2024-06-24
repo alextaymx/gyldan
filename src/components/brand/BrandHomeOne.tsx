@@ -89,7 +89,7 @@ const BrandHomeOne = ({ style_2 }: any) => {
       )}
       <div className="cs_moving_section_wrap cs_bold cs_moving_section_hover_push">
         <div className="cs_moving_section_in">
-          <div className="cs_moving_section cs_animation_speed_30">
+          <div className="cs_moving_section cs_animation_speed_20">
             <div className="cs_partner_logo_wrap">
               {brandData.map((item, i) => (
                 <div key={i} className="cs_partner_logo">
@@ -98,7 +98,7 @@ const BrandHomeOne = ({ style_2 }: any) => {
               ))}
             </div>
           </div>
-          <div className="cs_moving_section cs_animation_speed_30">
+          <div className="cs_moving_section cs_animation_speed_20">
             <div className="cs_partner_logo_wrap">
               {brandData.map((item, i) => (
                 <div key={i} className="cs_partner_logo">
