@@ -52,7 +52,7 @@ const index = () => {
       <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
-        videoId={"qmGYnJgCW1o"}
+        videoId={"Qj06rNemNI8"}
       />
       {/* video modal end */}
     </Wrapper>
