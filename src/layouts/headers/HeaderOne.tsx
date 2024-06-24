@@ -6,7 +6,8 @@ import React, { useEffect, useState } from "react";
 
 import Image from "next/image";
 import SITE_LOGO from "@/assets/img/logo/gyldan.png";
-import { businessInfo, menuData, socialLinks } from "@/data/constants";
+import { businessInfo, socialLinks } from "@/data/constants";
+import { menuData } from "@/data/menu_data";
 
 // import logo from "@/assets/img/logo.svg";
 // import Logo_white from "@/assets/img/Logo_white.png";

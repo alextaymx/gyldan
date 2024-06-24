@@ -1,53 +1,8 @@
 "use client";
+import { companySlider } from "@/data/constants";
 import Link from "next/link";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-interface DataType {
-  img: string;
-  sub_title: string;
-  title: string;
-  des: string;
-}
-
-const hero_slider: DataType[] = [
-  {
-    img: `/assets/img/hero_img_1.jpg`,
-    sub_title: "Gyldan Group",
-    title: "Your Success. Our Expertise.",
-    des: `Empowering success through expert business outsourcing, property management, talent discovery, and financial advisory solutions.`,
-  },
-  {
-    img: `/assets/img/hero_img_1.jpg`,
-    sub_title: "GYLDAN CORPORATE ADVISORY",
-    title: "Corporate Advisory",
-    des: `Comprehensive services for startups and enterprises: business setup, accounting, taxation, compliance, and more.`,
-  },
-  {
-    img: `/assets/img/hero_img_1.jpg`,
-    sub_title: "GRANDEUR COLIVING",
-    title: "Property Management",
-    des: `Creating harmonious coliving communities for landlords and tenants.`,
-  },
-  {
-    img: `/assets/img/hero_img_1.jpg`,
-    sub_title: "GYLDAN PROPERTIES",
-    title: "Property Investments",
-    des: `Strategic insights into property investments, management, and development across sectors.`,
-  },
-  {
-    img: `/assets/img/hero_img_1.jpg`,
-    sub_title: "DAZZ TALENT",
-    title: "Live Performances",
-    des: "Exceptional singers and live performers for cafes and bars, enhancing venue atmospheres.",
-  },
-  {
-    img: `/assets/img/hero_img_1.jpg`,
-    sub_title: "GYLDAN RECRUITMENT",
-    title: "Talent Recruitment",
-    des: "Connecting businesses with top-tier professionals across industries for organizational success.",
-  },
-];
 
 const HeroHomeOne = () => {
   return (
@@ -59,7 +14,7 @@ const HeroHomeOne = () => {
         pagination={{ clickable: true }}
         className="cs_slider cs_slider_1"
       >
-        {hero_slider.map((item, index) => (
+        {companySlider.map((item, index) => (
           <SwiperSlide key={index} className="swiper-slide">
             <div className="cs_hero cs_style1 cs_center cs_parallax">
               <div

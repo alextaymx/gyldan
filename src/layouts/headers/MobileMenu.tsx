@@ -1,6 +1,6 @@
 "use client";
 
-import { menuData } from "@/data/constants";
+import { menuData } from "@/data/menu_data";
 import Link from "next/link";
 
 const MobileMenu = ({ active, navTitle, openMobileMenu }: any) => {

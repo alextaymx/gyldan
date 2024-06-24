@@ -32,7 +32,6 @@ const index = () => {
           <main>
             <HeroHomeOne />
             <BrandHomeOne style_2={true} />
-            <MarqueeAreaHomeOne />
             <AboutHomeOne />
             <ServiceHomeOne />
             <PortfolioHomeOne />
@@ -43,6 +42,7 @@ const index = () => {
             <BlogHomeOne />
             <SubscribeHomeOne />
             <BrandHomeOne style_2={false} />
+            <MarqueeAreaHomeOne />
           </main>
           <FooterOne />
         </div>
