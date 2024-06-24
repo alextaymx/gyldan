@@ -1,6 +1,4 @@
-
-import React from 'react';
-
+import React from "react";
 
 interface DataType {
   id: string;
@@ -9,26 +7,26 @@ interface DataType {
 }
 const service_data: DataType[] = [
   {
-    id: 'one',
-    title: "Understand",
-    description: `Welcome to our digital agency We specialize in helping your business most`,
+    id: "one",
+    title: "Consultation",
+    description: `We begin by understanding your business needs and objectives through in-depth consultations to tailor our services to your unique requirements.`,
   },
   {
-    id: 'Two',
-    title: "Design",
-    description: `Welcome to our digital agency We specialize in helping your business most`,
+    id: "Two",
+    title: "Strategy",
+    description: `Our experts design a strategic plan that aligns with your goals, ensuring optimal solutions for corporate advisory, property management, and investments.`,
   },
   {
-    id: 'Three',
-    title: "Development",
-    description: `Welcome to our digital agency We specialize in helping your business most`,
+    id: "Three",
+    title: "Implementation",
+    description: `We put the strategy into action, meticulously executing plans for business setup, property management, talent recruitment, and live performances.`,
   },
   {
-    id: 'Four',
-    title: "Testing",
-    description: `Welcome to our digital agency We specialize in helping your business most`,
+    id: "Four",
+    title: "Support",
+    description: `We provide ongoing support and continuous optimization to ensure long-term success and efficiency in all aspects of your business operations.`,
   },
-]
+];
 const Service = () => {
   return (
     <>
@@ -66,13 +64,9 @@ const Service = () => {
                       </div>
 
                       <h6 className="cs_work_title">{item.title}</h6>
-                      <p className="cs_work_subtitle">
-                        {item.description}
-                      </p>
+                      <p className="cs_work_subtitle">{item.description}</p>
                     </div>
-
                   ))}
-
                 </div>
               </div>
             </div>

@@ -154,6 +154,7 @@ const BrandHomeOne = ({ style_2 }: any) => {
         <div className="cs_height_140 cs_height_lg_70"></div>
       } */}
       {/* <div className="cs_height_140 cs_height_lg_70"></div> */}
+      <div className="cs_height_140 cs_height_lg_70"></div>
     </>
   );
 };

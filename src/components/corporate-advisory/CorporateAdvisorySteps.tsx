@@ -4,41 +4,26 @@ const stepContent = {
   stepData: [
     {
       id: "One",
-      title: `Company Formation & Secretarial Services`,
-      description: `Navigate regulatory demands efficiently and establish your company seamlessly with our corporate secretarial services in Malaysia and Singapore.`,
+      title: `Consultation & Assessment`,
+      description: `We begin with a thorough assessment of your specific needs and goals to ensure a tailored approach.`,
     },
     {
       id: "Two",
-      title: `Accounting`,
-      description: `Professional accounting services tailored to meet your financial management needs, from bookkeeping to tax preparation and financial analysis.`,
+      title: `Customized Strategy`,
+      description: `Based on our assessment, we develop a strategic plan that assigns the right team members and resources to your project.`,
     },
     {
       id: "Three",
-      title: `Tax Advisory`,
-      description: `Guiding individuals and businesses through tax laws and regulations to minimize liabilities and optimize financial opportunities.`,
+      title: `Implementation & Support`,
+      description: `We execute the plan with precision and provide ongoing support, ensuring all services, including accounting, tax advisory, and business development, are optimized for your success.`,
     },
     {
       id: "Four",
-      title: `Business Development`,
-      description: `Enhance organizational effectiveness with our business development services, including framework establishment and SOPs.`,
-    },
-    {
-      id: "Five",
-      title: `HR & Payroll Management`,
-      description: `Efficient and precise HR and payroll management solutions, ensuring compliance and confidentiality for your business.`,
-    },
-    {
-      id: "Six",
-      title: `Virtual Administration`,
-      description: `Comprehensive remote administrative support, optimizing efficiency and productivity.`,
-    },
-    {
-      id: "Seven",
-      title: `IT Management & Other Business Systems Integration`,
-      description: `Tailored IT services for enhanced online presence and operational efficiency, including software maintenance and business systems integration.`,
+      title: `Tailored Solutions & Fees`,
+      description: `Our services are tailored to your unique scenario, with customized fees that reflect the specific needs and complexities of your business.`,
     },
   ],
-  title: `Specialization`,
+  title: `Our Approch`,
   description: `GCA offers comprehensive corporate advisory services, including strategic consulting, seamless implementation, and ongoing support. Whether you're a startup or an established enterprise, our expertise covers business setup, accounting, taxation, compliance, and more. What sets us apart is our commitment to leveraging cutting-edge technology, ensuring our services are not only thorough but also globally accessible through digital platforms.`,
 };
 

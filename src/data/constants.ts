@@ -52,12 +52,14 @@ export const companySlider: CompanyDataType[] = [
     sub_title: "Gyldan Group",
     title: "Your Success. Our Expertise.",
     des: `Empowering success through expert business outsourcing, property management, talent discovery, and financial advisory solutions.`,
+    link: `/service`,
   },
   {
     img: `/assets/img/hero_img_1.jpg`,
     sub_title: "GYLDAN CORPORATE ADVISORY",
     title: "Corporate Advisory",
     des: `Comprehensive services for startups and enterprises: business setup, accounting, taxation, compliance, and more.`,
+    link: `/corporate-advisory`,
   },
   {
     img: `/assets/img/hero_img_1.jpg`,
@@ -115,6 +117,7 @@ interface CompanyDataType {
   sub_title: string;
   title: string;
   des: string;
+  link?: string;
 }
 
 const constants = {

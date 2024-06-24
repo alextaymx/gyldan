@@ -1,30 +1,25 @@
 "use client";
 
-import React, { useState } from "react";
-import HeaderOne from "@/layouts/headers/HeaderOne";
-import HeroHomeOne from "@/components/hero/HeroHomeOne";
 import AboutHomeOne from "@/components/about/AboutHomeOne";
-import ServiceHomeOne from "@/components/service/ServiceHomeOne";
-import MarqueeAreaHomeOne from "@/components/brand/MarqueeAreaHomeOne";
-import PortfolioHomeOne from "@/components/portfolio/PortfolioHomeOne";
-import AwardsHomeOne from "@/components/awards/AwardsHomeOne";
-import Testimonial from "@/components/testimonial/Testimonial";
-import FunFactHomeOne from "@/components/funfact/FunFactHomeOne";
-import VideoHomeOne from "@/components/video/VideoHomeOne";
+import AboutUs from "@/components/about/AboutUs";
 import BlogHomeOne from "@/components/blog/BlogHomeOne";
-import SubscribeHomeOne from "@/components/subscribe/SubscribeHomeOne";
 import BrandHomeOne from "@/components/brand/BrandHomeOne";
-import FooterOne from "@/layouts/footers/FooterOne";
+import MarqueeAreaHomeOne from "@/components/brand/MarqueeAreaHomeOne";
+import MarqueeAreaHomeThree from "@/components/brand/MarqueeAreaHomeThree";
+import FeatureHomeTwo from "@/components/feature/FeatureHomeTwo";
+import HeroHomeOne from "@/components/hero/HeroHomeOne";
+import ServiceHomeTwo from "@/components/service/ServiceHomeTwo";
+import SubscribeHomeOne from "@/components/subscribe/SubscribeHomeOne";
 import Wrapper from "@/layouts/Wrapper";
-import VideoPopup from "@/components/modals/VideoPopup";
-import HeroHomeFour from "@/components/hero/HeroHomeFour";
+import FooterOne from "@/layouts/footers/FooterOne";
+import HeaderOne from "@/layouts/headers/HeaderOne";
 
 // export const metadata = {
-//   title: "Vixan - Digital  Creative Agency Next js Template",
+//   title: "Gyldan - Management & Consulting Firm | Gyldan Group",
 // };
 
 const index = () => {
-  const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
+  // const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
   return (
     <Wrapper>
       <HeaderOne />
@@ -33,30 +28,36 @@ const index = () => {
           <main>
             {/* <HeroHomeFour /> */}
             <HeroHomeOne />
+            <ServiceHomeTwo />
+
+            {/* <ServiceHomeOne /> */}
+            <FeatureHomeTwo />
+            <MarqueeAreaHomeThree />
             <AboutHomeOne />
-            <ServiceHomeOne />
-            <PortfolioHomeOne />
+            {/* <PortfolioHomeOne /> */}
             {/* <AwardsHomeOne /> */}
-            <Testimonial />
-            <FunFactHomeOne />
-            <VideoHomeOne setIsVideoOpen={setIsVideoOpen} />
+            <AboutUs />
+            {/* <FunFactHomeOne /> */}
+            {/* <VideoHomeOne setIsVideoOpen={setIsVideoOpen} /> */}
+            {/* <Testimonial /> */}
+
             <BlogHomeOne />
 
             <SubscribeHomeOne />
             {/* <BrandHomeOne style_2={true} /> */}
             <BrandHomeOne style_2={false} />
-            <MarqueeAreaHomeOne />
+            {/* <MarqueeAreaHomeOne /> */}
           </main>
           <FooterOne />
         </div>
       </div>
 
       {/* video modal start */}
-      <VideoPopup
+      {/* <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
         videoId={"Qj06rNemNI8"}
-      />
+      /> */}
       {/* video modal end */}
     </Wrapper>
   );

@@ -12,6 +12,36 @@ interface MenuDataType {
 
 export const menuData: MenuDataType[] = [
   {
+    id: 2,
+    title: "About",
+    link: "/about",
+    has_dropdown: false,
+  },
+  {
+    id: 6,
+    title: "Corporate Advisory",
+    link: "/corporate-advisory",
+    has_dropdown: false,
+  },
+  {
+    id: 4,
+    title: "Grandeur Coliving",
+    link: "/grandeur-coliving",
+    has_dropdown: true,
+    sub_menu: [
+      {
+        id: 1,
+        title: "I'm a Landlord",
+        link: "/grandeur-coliving/landlord",
+      },
+      {
+        id: 2,
+        title: "I'm a Tenant",
+        link: "/grandeur-coliving/tenant",
+      },
+    ],
+  },
+  {
     id: 1,
     title: "Home",
     link: "/",
@@ -44,12 +74,7 @@ export const menuData: MenuDataType[] = [
       },
     ],
   },
-  {
-    id: 2,
-    title: "About",
-    link: "/about",
-    has_dropdown: false,
-  },
+
   {
     id: 3,
     title: "Pages",
@@ -88,24 +113,7 @@ export const menuData: MenuDataType[] = [
       },
     ],
   },
-  {
-    id: 4,
-    title: "Services",
-    link: "/service",
-    has_dropdown: true,
-    sub_menu: [
-      {
-        id: 1,
-        title: "Services",
-        link: "/service",
-      },
-      {
-        id: 2,
-        title: "Services Details",
-        link: "/service-details",
-      },
-    ],
-  },
+
   {
     id: 5,
     title: "Portfolio",
@@ -124,12 +132,7 @@ export const menuData: MenuDataType[] = [
       },
     ],
   },
-  {
-    id: 6,
-    title: "Corporate Advisory",
-    link: "/corporate-advisory",
-    has_dropdown: false,
-  },
+
   //   {
   //     id: 6,
   //     title: "Blog",

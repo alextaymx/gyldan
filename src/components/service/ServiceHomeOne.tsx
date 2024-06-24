@@ -5,7 +5,7 @@ import serviceData from "@/data/service_data";
 const ServiceHomeOne = () => {
   return (
     <>
-      <div className="cs_height_150 cs_height_lg_60"></div>
+      {/* <div className="cs_height_150 cs_height_lg_60"></div> */}
       <section className="cs_primary_bg position-relative">
         <div className="cs_height_150 cs_height_lg_60"></div>
         <div className="container">
@@ -15,7 +15,7 @@ const ServiceHomeOne = () => {
                 Our Services
               </div>
               <h2 className="cs_section_title anim_heading_title">
-                Comprehensive Digital Strategy Transformation
+                Tailored Solutions for Business Excellence
               </h2>
             </div>
             <div className="cs_section_heading_right cs_btn_anim">
@@ -58,11 +58,11 @@ const ServiceHomeOne = () => {
                     <h2 className="cs_card_title">
                       <Link href="/service-details">{item.title}</Link>
                     </h2>
-                    <div className="cs_card_subtitle">{item.des}</div>
+                    <div className="cs_card_subtitle">{item.description}</div>
                   </div>
                 </div>
                 <div className="cs_card_link_wrap">
-                  <Link href="/service-details" className="cs_card_link">
+                  <Link href={item.link ?? ""} className="cs_card_link">
                     <span>
                       <svg
                         width="30"

@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const HeroHomeOne = () => {
   return (
-    <>
+    <div className="home-slider">
       <Swiper
         loop={true}
         slidesPerView={1}
@@ -47,11 +47,11 @@ const HeroHomeOne = () => {
                     <div className="cs_hero_btn_wrap">
                       <div className="cs_round_btn_wrap">
                         <Link
-                          href="/portfolio"
+                          href={item.link ? item.link : ""}
                           className="cs_hero_btn cs_round_btn btn-item"
                         >
                           <span></span>
-                          Our Projects
+                          Learn more
                         </Link>
                       </div>
                     </div>
@@ -63,7 +63,7 @@ const HeroHomeOne = () => {
         ))}
         <div className="cs_pagination cs_style1"></div>
       </Swiper>
-    </>
+    </div>
   );
 };
 

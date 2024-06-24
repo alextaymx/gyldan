@@ -38,7 +38,7 @@ const ServiceHomeFive = () => {
                     <h6 className="cs_post_title">
                       <Link href="/service-details">{item.title}</Link>
                     </h6>
-                    <p className="cs_m0 cs_color_1">{item.des}</p>
+                    <p className="cs_m0 cs_color_1">{item.description}</p>
                     <div className="cs_section_heading_right">
                       <Link
                         href="/service-details"
