@@ -6,161 +6,10 @@ import React, { useEffect, useState } from "react";
 
 import Image from "next/image";
 import SITE_LOGO from "@/assets/img/logo/gyldan.png";
+import { businessInfo, menuData, socialLinks } from "@/data/constants";
 
 // import logo from "@/assets/img/logo.svg";
 // import Logo_white from "@/assets/img/Logo_white.png";
-
-interface DataType {
-  id: number;
-  title: string;
-  link: string;
-  has_dropdown: boolean;
-  sub_menu?: {
-    id: number;
-    title: string;
-    link: string;
-  }[];
-}
-
-const menu_data: DataType[] = [
-  {
-    id: 1,
-    title: "Home",
-    link: "/",
-    has_dropdown: true,
-    sub_menu: [
-      {
-        id: 1,
-        title: "Digital Agency",
-        link: "/",
-      },
-      {
-        id: 2,
-        title: "Startup Agency",
-        link: "/startup-agency",
-      },
-      {
-        id: 3,
-        title: "Design Studio",
-        link: "/design-studio",
-      },
-      {
-        id: 4,
-        title: "Creative Protfolio",
-        link: "/creative-protfolio",
-      },
-      {
-        id: 5,
-        title: "Marketing Agency",
-        link: "/marketing-agency",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "About",
-    link: "/about",
-    has_dropdown: false,
-  },
-  {
-    id: 3,
-    title: "Pages",
-    link: "/about",
-    has_dropdown: true,
-    sub_menu: [
-      {
-        id: 1,
-        title: "About",
-        link: "/about",
-      },
-      {
-        id: 2,
-        title: "Team",
-        link: "/team",
-      },
-      {
-        id: 3,
-        title: "Team Details",
-        link: "/team-details",
-      },
-      {
-        id: 4,
-        title: "Contact",
-        link: "/contact",
-      },
-      {
-        id: 5,
-        title: "Faq",
-        link: "/faq",
-      },
-      {
-        id: 6,
-        title: "Error",
-        link: "/error",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "Services",
-    link: "/service",
-    has_dropdown: true,
-    sub_menu: [
-      {
-        id: 1,
-        title: "Services",
-        link: "/service",
-      },
-      {
-        id: 2,
-        title: "Services Details",
-        link: "/service-details",
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: "Portfolio",
-    link: "/portfolio",
-    has_dropdown: true,
-    sub_menu: [
-      {
-        id: 1,
-        title: "Portfolio",
-        link: "/portfolio",
-      },
-      {
-        id: 2,
-        title: "Portfolio Details",
-        link: "/portfolio-details",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "Blog",
-    link: "/blog",
-    has_dropdown: true,
-    sub_menu: [
-      {
-        id: 1,
-        title: "Blog",
-        link: "/blog",
-      },
-      {
-        id: 2,
-        title: "Blog Details",
-        link: "/blog-details",
-      },
-    ],
-  },
-  {
-    id: 7,
-    title: "Contact",
-    link: "/contact",
-    has_dropdown: false,
-  },
-];
 
 const HeaderOne = () => {
   const { sticky } = UseSticky();
@@ -283,7 +132,7 @@ const HeaderOne = () => {
               <div className="cs_box_one">
                 <div className="cs_nav_black_section cs_font_changes">
                   <ul>
-                    {menu_data.map((item, i) => (
+                    {menuData.map((item, i) => (
                       <li
                         key={i}
                         className={`menu-item-has-black-section cs_style_1 ${
@@ -337,10 +186,7 @@ const HeaderOne = () => {
                         fill="white"
                       ></path>
                     </svg>
-                    <span className="ms-2">
-                      46 JOHN ST TORONTO ON <br />
-                      &nbsp; &nbsp; &nbsp; &nbsp; M5V 3W2
-                    </span>
+                    <span className="ms-2">{businessInfo.address}</span>
                   </p>
 
                   <h4 className="cs_phone_number">
@@ -365,42 +211,31 @@ const HeaderOne = () => {
                           fill="white"
                         ></path>
                       </svg>
-                      <span className="ms-2">(406)555-0120</span>
+                      <span className="ms-2">{businessInfo.phone}</span>
                     </a>
                   </h4>
 
                   <ul className="cs_social_link">
-                    <li>
-                      <a target="_blank" href="https://www.facebook.com/">
-                        Facebook
-                      </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://www.linkedin.com/">
-                        Linkedin
-                      </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://www.instagram.com/">
-                        Instagram
-                      </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://dribbble.com/">
-                        Dribbble
-                      </a>
-                    </li>
+                    {socialLinks.map((item, i) => {
+                      return (
+                        <li key={i}>
+                          <a target="_blank" href={item.link}>
+                            {item.title}
+                          </a>
+                        </li>
+                      );
+                    })}
                   </ul>
 
                   <hr className="mt-2 me-5 mb-2" />
-                  <h2>
+                  <h4>
                     <a
-                      href="mailto:info@email.com"
+                      href={`mailto:${businessInfo.email}`}
                       className="cs_primary_font cs_text_btn"
                     >
-                      <span className="cs_black">info@email.com</span>
+                      <span className="cs_black">{businessInfo.email}</span>
                     </a>
-                  </h2>
+                  </h4>
                 </div>
               </div>
             </div>
