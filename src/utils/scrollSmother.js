@@ -365,6 +365,7 @@ export function scrollSmother(windowObject) {
               return j.isRefreshing || X.restart(!0);
             }),
           k = t.effectsPrefix || '',
+          // alex
           _ = j.getScrollFunc(O),
           C =
             1 === j.isTouch
