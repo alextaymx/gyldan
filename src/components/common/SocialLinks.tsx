@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import React from 'react';
 
 import { socialLinks } from '@/data/constants';
 
@@ -23,7 +24,7 @@ export const SocialLinks = () => {
 
 // copy right text
 type copy_right_text_type = {
-  copy_right: JSX.Element;
+  copy_right: React.JSX.Element;
 };
 
 const copy_right_text: copy_right_text_type = {

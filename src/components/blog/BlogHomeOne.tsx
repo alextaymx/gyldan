@@ -1,7 +1,6 @@
 'use client';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import blog_data from '@/data/blog_data';

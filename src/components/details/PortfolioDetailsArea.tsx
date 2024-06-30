@@ -167,11 +167,11 @@ const PortfolioDetailsArea = () => {
         <div className="cs_portfolio_details">
           <div className="cs_section_next_prv anim_div_ShowZoom">
             <div className="cs_prv_btn">
-              <a href="#">Previous</a>
+              <a href="/">Previous</a>
             </div>
             <div>|</div>
             <div className="cs_next">
-              <a href="#">Next Project</a>
+              <a href="/">Next Project</a>
             </div>
           </div>
         </div>

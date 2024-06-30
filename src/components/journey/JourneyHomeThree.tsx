@@ -34,7 +34,7 @@ const JourneyHomeThree = () => {
                 <Image src={journey_img_3} alt="Journey_story_3" />
               </span>
               {` `}
-              ndenvironmental mediums. Let's bring your vision to
+              ndenvironmental mediums. Let&apos;s bring your vision to
               <span>
                 <Image src={journey_img_4} alt="Journey_story_4" />
               </span>

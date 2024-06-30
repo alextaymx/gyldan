@@ -1,7 +1,4 @@
-import React from 'react';
-
 import AboutHomeFour from '@/components/about/AboutHomeFour';
-import CorporateAdvisoryIntro from '@/components/corporate-advisory/CorporateAdvisoryIntro';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import Wrapper from '@/layouts/Wrapper';

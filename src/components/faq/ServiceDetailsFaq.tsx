@@ -110,7 +110,7 @@ const ServiceDetailsFaq = () => {
               </div>
             </div>
             <div className="cs_back_to_services_btn">
-              <a href="#" className="cs_style_1">
+              <a href="/" className="cs_style_1">
                 <span>Back To Services Page</span>
                 <svg
                   width="19"

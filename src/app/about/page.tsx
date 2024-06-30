@@ -1,9 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import About from '@/components/about/About';
-import AwardsHomeOne from '@/components/awards/AwardsHomeOne';
 import BannerAbout from '@/components/brand/BannerAbout';
 import BrandHomeOne from '@/components/brand/BrandHomeOne';
 import MarqueeAreaHomeOne from '@/components/brand/MarqueeAreaHomeOne';
@@ -21,7 +20,7 @@ import Wrapper from '@/layouts/Wrapper';
 //   title: "About Vixan - Digital  Creative Agency Next js Template",
 // };
 
-const index = () => {
+const Index = () => {
   const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
 
   return (
@@ -56,4 +55,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

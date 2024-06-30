@@ -23,7 +23,7 @@ import Wrapper from '@/layouts/Wrapper';
 //   title: "Marketing Agency Vixan - Digital  Creative Agency Next js Template",
 // };
 
-const index = () => {
+const Index = () => {
   const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
 
   return (
@@ -60,4 +60,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

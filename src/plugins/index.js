@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 //  Gsap Plugin import here
 
 export { default as Gsap } from '../../public/assets/plugins/gsap.js';

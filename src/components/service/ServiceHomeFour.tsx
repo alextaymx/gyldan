@@ -70,14 +70,14 @@ const ServiceHomeFour = () => {
                       <div className="cs_card_right">
                         <div className="cs_card_right_in">
                           <h2 className="cs_card_title">
-                            <a href="#" className="">
+                            <a href="/" className="">
                               <span>0{item.id} / </span> {item.title}
                             </a>
                           </h2>
                         </div>
                       </div>
                       <div className="cs_card_link_wrap">
-                        <a href="#" className="cs_card_link">
+                        <a href="/" className="cs_card_link">
                           <span>
                             <svg
                               width="20"
