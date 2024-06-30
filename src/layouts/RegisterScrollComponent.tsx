@@ -1,11 +1,13 @@
 import { gsap } from 'gsap';
 import { useEffect } from 'react';
 
+import MouseMove from '@/components/common/MouseMove';
 import constants from '@/data/constants';
-import { ScrollSmoother } from '@/plugins';
+import { ScrollSmoother, ScrollTrigger } from '@/plugins';
 import { scrollSmother } from '@/utils/scrollSmother';
 
 gsap.registerPlugin(ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 
 function RegisterScrollComponent() {
   useEffect(() => {
@@ -29,7 +31,7 @@ function RegisterScrollComponent() {
       scrollSmother();
     }
   }, []);
-  return null;
+  return constants.isProduction ? <MouseMove /> : null;
 }
 
 export default RegisterScrollComponent;
