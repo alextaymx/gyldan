@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 
 import ScrollToTop from '@/components/common/ScrollToTop';
-const RegisterScrollComponent = dynamic(() => import(`@/layouts/RegisterScrollComponent`), {
+const SmoothScrollProvider = dynamic(() => import(`@/layouts/SmoothScrollProvider`), {
   ssr: false, // This will disable server-side rendering (SSR)
 });
 
@@ -23,7 +23,7 @@ const Wrapper = ({ children }: any) => {
 
   return (
     <>
-      {/* <RegisterScrollComponent /> */}
+      <SmoothScrollProvider />
       {children}
       <ScrollToTop />
       {/* <DarkLight /> */}

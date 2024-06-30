@@ -2,7 +2,7 @@ import { menuData } from './menu_data';
 
 export const ENVIRONMENT = process.env.NODE_ENV;
 export const isLocal = ENVIRONMENT === `development`;
-export const isProduction = ENVIRONMENT === `production`;
+export const isProduction = true || ENVIRONMENT === `production`;
 
 export const businessInfo = {
   email: `info@gyldan.com.my`,
