@@ -1,4 +1,3 @@
-import { gsap } from 'gsap';
 import React, { useEffect } from 'react';
 
 const MouseMove = () => {

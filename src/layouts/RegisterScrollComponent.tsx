@@ -14,13 +14,17 @@ if (safeToRender) {
 function RegisterScrollComponent() {
   useEffect(() => {
     if (safeToRender) {
-      ScrollSmoother.create({
-        smooth: 1.35,
-        effects: true,
-        smoothTouch: false,
-        normalizeScroll: false,
-        ignoreMobileResize: true,
-      });
+      if (gsap) {
+        gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+        ScrollSmoother.create({
+          smooth: 1.35,
+          effects: true,
+          smoothTouch: false,
+          normalizeScroll: false,
+          ignoreMobileResize: true,
+        });
+      }
     }
   }, []);
 
