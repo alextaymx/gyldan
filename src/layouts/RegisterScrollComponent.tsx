@@ -8,8 +8,7 @@ import { scrollSmother } from '@/utils/scrollSmother';
 
 const safeToRender = typeof window !== `undefined` && constants.isProduction;
 if (safeToRender) {
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.registerPlugin(ScrollSmoother);
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 }
 
 function RegisterScrollComponent() {
