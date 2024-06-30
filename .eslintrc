@@ -1,0 +1,84 @@
+{
+  "extends": ["next", "next/core-web-vitals", "prettier"],
+  "plugins": ["simple-import-sort", "prettier"],
+  "rules": {
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "camelcase": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unused-prop-types": "off",
+    "react/require-default-props": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never",
+        "js": "never",
+        "jsx": "never"
+      }
+    ],
+    "quotes": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ],
+    "@next/next/no-img-element": "off"
+  },
+  "overrides": [
+    {
+      "files": "**/*.+(ts|tsx)",
+      "parser": "@typescript-eslint/parser",
+
+      "plugins": ["@typescript-eslint/eslint-plugin"],
+      "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "no-use-before-define": [0],
+        "no-undef": "error",
+        "@typescript-eslint/no-use-before-define": [0],
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/quotes": [
+          2,
+          "backtick",
+          {
+            "avoidEscape": true
+          }
+        ],
+        "@typescript-eslint/ban-types": [
+          "error",
+          {
+            "types": {
+              // add a custom message to help explain why not to use it
+              "Foo": "Don't use Foo because it is unsafe",
+              // add a custom message, AND tell the plugin how to fix it
+              "OldAPI": {
+                "message": "Use NewAPI instead",
+                "fixWith": "NewAPI"
+              },
+              // un-ban a type that's banned by default
+              "{}": false
+            },
+            "extendDefaults": true
+          }
+        ],
+        "@typescript-eslint/no-unused-vars": ["warn"]
+      }
+    }
+  ]
+}
