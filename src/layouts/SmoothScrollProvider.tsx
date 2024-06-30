@@ -1,14 +1,16 @@
 import { gsap } from 'gsap';
 import { useEffect, useLayoutEffect } from 'react';
 
-import { ScrollSmoother, ScrollTrigger } from '@/plugins';
+import { ScrollSmoother } from '@/plugins';
 import { scrollSmother } from '@/utils/scrollSmother';
-
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+// import animationTitle from "@/utils/animationTitle";
+// import { buttonAnimation } from "@/utils/buttonAnimation";
+// import { ScrollSmoother } from "@/plugins";
+gsap.registerPlugin(ScrollSmoother);
 
 function SmoothScrollProvider() {
   useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+    gsap.registerPlugin(ScrollSmoother);
     const ctx = gsap.context(() => {
       ScrollSmoother.create({
         smooth: 1.35,
