@@ -1,9 +1,8 @@
-
-import React from 'react';
 import Image from 'next/image';
-import team_data from '@/data/team_data';
 import Link from 'next/link';
+import React from 'react';
 
+import team_data from '@/data/team_data';
 
 const TeamArea = () => {
   return (
@@ -20,12 +19,11 @@ const TeamArea = () => {
         </div>
       </div>
 
-
       <div className="cs_height_100 cs_height_lg_60"></div>
       <section>
         <div className="container">
           <div className="cs_team_section anim_div_ShowDowns">
-            {team_data.slice(0, 4).map((item, i) =>
+            {team_data.slice(0, 4).map((item, i) => (
               <div key={i} className="cs_team_img">
                 <Link href="/team-details">
                   <Image src={item.img} alt="teamsimg1" />
@@ -39,12 +37,11 @@ const TeamArea = () => {
                   <p className="cs_team_subtitle">{item.designation}</p>
                 </div>
               </div>
-            )}
-
+            ))}
           </div>
           <div className="cs_height_20 cs_height_lg_20"></div>
           <div className="cs_team_section anim_div_ShowDowns">
-            {team_data.slice(4, 8).map((item, i) =>
+            {team_data.slice(4, 8).map((item, i) => (
               <div key={i} className="cs_team_img">
                 <Link href="/team-details">
                   <Image src={item.img} alt="teamsimg5" />
@@ -57,7 +54,7 @@ const TeamArea = () => {
                   <p className="cs_team_subtitle">{item.designation}</p>
                 </div>
               </div>
-            )} 
+            ))}
           </div>
         </div>
       </section>

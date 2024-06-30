@@ -1,13 +1,13 @@
-"use client";
-import React from "react";
-import Image, { StaticImageData } from "next/image";
+'use client';
+import Image, { StaticImageData } from 'next/image';
+import React from 'react';
 
 type DataType = StaticImageData[];
-import brand_img_1 from "@/assets/img/brand/1.png";
-import brand_img_2 from "@/assets/img/brand/2.jpg";
-import brand_img_3 from "@/assets/img/brand/3.png";
-import brand_img_4 from "@/assets/img/brand/4.png";
-import brand_img_5 from "@/assets/img/brand/5.png";
+import brand_img_1 from '@/assets/img/brand/1.png';
+import brand_img_2 from '@/assets/img/brand/2.jpg';
+import brand_img_3 from '@/assets/img/brand/3.png';
+import brand_img_4 from '@/assets/img/brand/4.png';
+import brand_img_5 from '@/assets/img/brand/5.png';
 
 // import brand_img_1 from "@/assets/img/partner_1.svg";
 // import brand_img_2 from "@/assets/img/partner_2.svg";
@@ -74,10 +74,9 @@ const BrandHomeOne = ({ style_2 }: any) => {
           <p className="text-center cs_font_18 cs_normal">Our Brands</p>
           <div className="w-75 mx-auto">
             <p className="text-center cs_font_18 cs_normal">
-              At Gyldan, Our Brands represent the pinnacle of expertise across
-              Business Process Outsourcing, Property Management, Talent
-              Management, Talent Acquisition and Financial Advisory. Each brand
-              is a testament to our commitment to excellence and tailored
+              At Gyldan, Our Brands represent the pinnacle of expertise across Business Process
+              Outsourcing, Property Management, Talent Management, Talent Acquisition and Financial
+              Advisory. Each brand is a testament to our commitment to excellence and tailored
               solutions for your success
             </p>
           </div>

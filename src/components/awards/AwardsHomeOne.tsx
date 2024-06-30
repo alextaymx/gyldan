@@ -1,13 +1,13 @@
-"use client";
-import React, { useState } from "react";
-import award_img_1 from "@/assets/img/award_1.svg";
-import award_img_2 from "@/assets/img/award_2.svg";
-import award_img_3 from "@/assets/img/award_3.svg";
+'use client';
+import Image, { StaticImageData } from 'next/image';
+import React, { useState } from 'react';
 
-import award_thumb_1 from "@/assets/img/award_thumb_1.jpg";
-import award_thumb_2 from "@/assets/img/award_thumb_2.jpg";
-import award_thumb_3 from "@/assets/img/award_thumb_3.jpg";
-import Image, { StaticImageData } from "next/image";
+import award_img_1 from '@/assets/img/award_1.svg';
+import award_img_2 from '@/assets/img/award_2.svg';
+import award_img_3 from '@/assets/img/award_3.svg';
+import award_thumb_1 from '@/assets/img/award_thumb_1.jpg';
+import award_thumb_2 from '@/assets/img/award_thumb_2.jpg';
+import award_thumb_3 from '@/assets/img/award_thumb_3.jpg';
 
 interface DataType {
   id: number;
@@ -59,9 +59,7 @@ const AwardsHomeOne = ({ style_2 }: any) => {
         <div className="container">
           <div className="cs_section_heading cs_style_1 cs_type_1 swiper-slide swiper-slide-active">
             <div className="cs_section_heading_text">
-              <div className="cs_section_subtitle anim_div_ShowZoom">
-                Our Awards
-              </div>
+              <div className="cs_section_subtitle anim_div_ShowZoom">Our Awards</div>
               <h2 className="cs_section_title anim_heading_title">
                 Recognizing Excellence Our Award Winning Work
               </h2>
@@ -74,7 +72,7 @@ const AwardsHomeOne = ({ style_2 }: any) => {
                 key={i}
                 onMouseEnter={() => handleMouseEnter(i)}
                 className={`cs_card cs_style_2 cs_hover_tab anim_div_ShowDowns ${
-                  activeTab === i ? "active" : ""
+                  activeTab === i ? `active` : ``
                 }`}
               >
                 <div className="cs_card_left">

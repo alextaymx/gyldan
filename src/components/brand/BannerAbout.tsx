@@ -1,7 +1,8 @@
-import React from "react";
-import Image from "next/image";
+import Image from 'next/image';
+import React from 'react';
+
 // import logo from "@/assets/img/logo.svg";
-import SITE_LOGO from "@/assets/img/logo/gyldan.png";
+import SITE_LOGO from '@/assets/img/logo/gyldan.png';
 
 const BannerAbout = () => {
   return (
@@ -28,11 +29,7 @@ const BannerAbout = () => {
                     ></path>
                     <g fontSize="22.1px">
                       <text textAnchor="start">
-                        <textPath
-                          className="coloring"
-                          href="#textPath"
-                          startOffset="0%"
-                        >
+                        <textPath className="coloring" href="#textPath" startOffset="0%">
                           Gyldan Group . Gyldan Group . Gyldan Group . &nbsp;
                         </textPath>
                       </text>

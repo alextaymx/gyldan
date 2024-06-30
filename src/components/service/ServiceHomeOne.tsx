@@ -1,6 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import serviceData from "@/data/service_data";
+import Link from 'next/link';
+import React from 'react';
+
+import serviceData from '@/data/service_data';
 
 const ServiceHomeOne = () => {
   return (
@@ -11,9 +12,7 @@ const ServiceHomeOne = () => {
         <div className="container">
           <div className="cs_section_heading cs_style_1 cs_type_1 cs_color_1">
             <div className="cs_section_heading_text">
-              <div className="cs_section_subtitle anim_div_ShowZoom">
-                Our Services
-              </div>
+              <div className="cs_section_subtitle anim_div_ShowZoom">Our Services</div>
               <h2 className="cs_section_title anim_heading_title">
                 Tailored Solutions for Business Excellence
               </h2>
@@ -39,10 +38,7 @@ const ServiceHomeOne = () => {
           <div className="cs_height_50 cs_height_lg_10"></div>
           <div className="cs_card_1_list">
             {serviceData.map((item, i) => (
-              <div
-                key={i}
-                className="cs_card cs_style_1 cs_color_1 anim_div_ShowDowns"
-              >
+              <div key={i} className="cs_card cs_style_1 cs_color_1 anim_div_ShowDowns">
                 <div className="cs_card_left">
                   <div
                     className="cs_card_number cs_primary_font"
@@ -62,7 +58,7 @@ const ServiceHomeOne = () => {
                   </div>
                 </div>
                 <div className="cs_card_link_wrap">
-                  <Link href={item.link ?? ""} className="cs_card_link">
+                  <Link href={item.link ?? ``} className="cs_card_link">
                     <span>
                       <svg
                         width="30"

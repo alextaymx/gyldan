@@ -1,7 +1,8 @@
-import React from "react";
-import Link from "next/link";
-import bg_img from "@/assets/img/cp_services.jpg";
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+
+import bg_img from '@/assets/img/cp_services.jpg';
 
 interface DataType {
   sub_title: string;
@@ -14,29 +15,29 @@ interface DataType {
 }
 
 const service_content: DataType = {
-  sub_title: "Our Services",
-  title: "Tailored Solutions for Business Excellence",
+  sub_title: `Our Services`,
+  title: `Tailored Solutions for Business Excellence`,
   service_data: [
     {
       id: 1,
-      title: "Gyldan Corporate Advisory",
-      link: "/corporate-advisory",
+      title: `Gyldan Corporate Advisory`,
+      link: `/corporate-advisory`,
     },
     {
       id: 2,
-      title: "Grandeur Coliving",
+      title: `Grandeur Coliving`,
     },
     {
       id: 3,
-      title: "Gyldan Properties",
+      title: `Gyldan Properties`,
     },
     {
       id: 4,
-      title: "Dazz Talent",
+      title: `Dazz Talent`,
     },
     {
       id: 5,
-      title: "Gyldan Recruitment",
+      title: `Gyldan Recruitment`,
     },
   ],
 };
@@ -52,9 +53,7 @@ const ServiceHomeTwo = () => {
         <div className="container">
           <div className="cs_section_heading cs_style_1 cs_color_1 cs_type_1">
             <div className="cs_section_heading_text">
-              <div className="cs_section_subtitle anim_div_ShowZoom">
-                {sub_title}
-              </div>
+              <div className="cs_section_subtitle anim_div_ShowZoom">{sub_title}</div>
               <h2 className="cs_section_title anim_heading_title">{title}</h2>
             </div>
           </div>
@@ -63,18 +62,12 @@ const ServiceHomeTwo = () => {
             <div className="col-md-6">
               <div className="anim_div_ShowLeftSide">
                 {service_data.map((item, i) => (
-                  <div
-                    key={i}
-                    className="cs_creative_protfolio cs_card_style_change"
-                  >
+                  <div key={i} className="cs_creative_protfolio cs_card_style_change">
                     <div className="cs_card cs_style_1 cs_color_1">
                       <div className="cs_card_right">
                         <div className="cs_card_right_in">
                           <h2 className="cs_card_title">
-                            <Link
-                              href={item.link ?? "/service"}
-                              className="cs_white_color"
-                            >
+                            <Link href={item.link ?? `/service`} className="cs_white_color">
                               <span>0{item.id} / </span>
                               &nbsp;
                               {item.title}
@@ -84,7 +77,7 @@ const ServiceHomeTwo = () => {
                       </div>
                       <div className="cs_card_link_wrap">
                         <Link
-                          href={item.link ?? "/service"}
+                          href={item.link ?? `/service`}
                           className="cs_card_link cs_white_color"
                         >
                           <span>

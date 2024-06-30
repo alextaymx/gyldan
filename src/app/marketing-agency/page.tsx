@@ -1,22 +1,23 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import Wrapper from "@/layouts/Wrapper";
-import HeaderOne from "@/layouts/headers/HeaderOne";
-import HeroHomeFive from "@/components/hero/HeroHomeFive";
-import VideoHomeFive from "@/components/video/VideoHomeFive";
-import FunFactHomeOne from "@/components/funfact/FunFactHomeOne";
-import FeatureHomeTwo from "@/components/feature/FeatureHomeTwo";
-import ServiceHomeFive from "@/components/service/ServiceHomeFive";
-import PortfolioHomeFive from "@/components/portfolio/PortfolioHomeFive";
-import AwardsHomeOne from "@/components/awards/AwardsHomeOne";
-import Testimonial from "@/components/testimonial/Testimonial";
-import TeamHomeTwo from "@/components/team/TeamHomeTwo";
-import BrandHomeOne from "@/components/brand/BrandHomeOne";
-import AboutHomeFour from "@/components/about/AboutHomeFour";
-import BlogHomeOne from "@/components/blog/BlogHomeOne";
-import FooterOne from "@/layouts/footers/FooterOne";
-import VideoPopup from "@/components/modals/VideoPopup";
+import React, { useState } from 'react';
+
+import AboutHomeFour from '@/components/about/AboutHomeFour';
+import AwardsHomeOne from '@/components/awards/AwardsHomeOne';
+import BlogHomeOne from '@/components/blog/BlogHomeOne';
+import BrandHomeOne from '@/components/brand/BrandHomeOne';
+import FeatureHomeTwo from '@/components/feature/FeatureHomeTwo';
+import FunFactHomeOne from '@/components/funfact/FunFactHomeOne';
+import HeroHomeFive from '@/components/hero/HeroHomeFive';
+import VideoPopup from '@/components/modals/VideoPopup';
+import PortfolioHomeFive from '@/components/portfolio/PortfolioHomeFive';
+import ServiceHomeFive from '@/components/service/ServiceHomeFive';
+import TeamHomeTwo from '@/components/team/TeamHomeTwo';
+import Testimonial from '@/components/testimonial/Testimonial';
+import VideoHomeFive from '@/components/video/VideoHomeFive';
+import FooterOne from '@/layouts/footers/FooterOne';
+import HeaderOne from '@/layouts/headers/HeaderOne';
+import Wrapper from '@/layouts/Wrapper';
 
 // export const metadata = {
 //   title: "Marketing Agency Vixan - Digital  Creative Agency Next js Template",
@@ -52,7 +53,7 @@ const index = () => {
       <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
-        videoId={"Qj06rNemNI8"}
+        videoId={`Qj06rNemNI8`}
       />
       {/* video modal end */}
     </Wrapper>

@@ -1,11 +1,9 @@
-
 import React, { useEffect } from 'react';
 
 const MouseMove = () => {
-  
   const mousemoveHandler = (e: any) => {
     try {
-      let tl = gsap.timeline({
+      const tl = gsap.timeline({
         defaults: {
           x: e.clientX,
           y: e.clientY,
@@ -13,14 +11,14 @@ const MouseMove = () => {
       });
 
       // Main Cursor Moving
-      tl.to(".cs_cursor_1", {
-        ease: "power2.out",
+      tl.to(`.cs_cursor_1`, {
+        ease: `power2.out`,
       }).to(
-        ".cs_cursor_2",
+        `.cs_cursor_2`,
         {
-          ease: "power2.out",
+          ease: `power2.out`,
         },
-        "-=0.4"
+        `-=0.4`,
       );
     } catch (error) {
       console.log(error);
@@ -28,9 +26,9 @@ const MouseMove = () => {
   };
 
   useEffect(() => {
-    document.addEventListener("mousemove", mousemoveHandler);
+    document.addEventListener(`mousemove`, mousemoveHandler);
     return () => {
-      document.removeEventListener("mousemove", mousemoveHandler);
+      document.removeEventListener(`mousemove`, mousemoveHandler);
     };
   }, []);
 

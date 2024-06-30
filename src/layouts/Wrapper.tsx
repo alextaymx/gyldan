@@ -1,16 +1,13 @@
-"use client";
+'use client';
 
-import MouseMove from "@/components/common/MouseMove";
-import ScrollToTop from "@/components/common/ScrollToTop";
+import dynamic from 'next/dynamic';
 
-import constants from "@/data/constants";
-import dynamic from "next/dynamic";
-const RegisterScrollComponent = dynamic(
-  () => import("@/layouts/RegisterScrollComponent"),
-  {
-    ssr: false, // This will disable server-side rendering (SSR)
-  }
-);
+import MouseMove from '@/components/common/MouseMove';
+import ScrollToTop from '@/components/common/ScrollToTop';
+import constants from '@/data/constants';
+const RegisterScrollComponent = dynamic(() => import(`@/layouts/RegisterScrollComponent`), {
+  ssr: false, // This will disable server-side rendering (SSR)
+});
 
 // import { gsap } from "gsap";
 // import animationTitle from "@/utils/animationTitle";

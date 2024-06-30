@@ -1,10 +1,11 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import blog_data from "@/data/blog_data";
-import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import blog_data from '@/data/blog_data';
 
 const BlogHomeTwo = ({ style_2 }: any) => {
   return (
@@ -14,9 +15,7 @@ const BlogHomeTwo = ({ style_2 }: any) => {
         <div className="container">
           <div className="cs_section_heading cs_style_1 cs_type_1">
             <div className="cs_section_heading_text">
-              <div className="cs_section_subtitle anim_div_ShowZoom">
-                Our Articles
-              </div>
+              <div className="cs_section_subtitle anim_div_ShowZoom">Our Articles</div>
               <h2 className="cs_section_title anim_heading_title">
                 New Day <br />
                 New Inspiration
@@ -49,7 +48,7 @@ const BlogHomeTwo = ({ style_2 }: any) => {
             slidesPerView="auto"
             modules={[Autoplay]}
             pagination={{
-              el: ".cs_pagination",
+              el: `.cs_pagination`,
               clickable: true,
             }}
             className="cs_slider cs_slider_3 cs_row_slider cs_vw_none anim_blog"

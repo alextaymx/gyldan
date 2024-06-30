@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface DataType {
   id: string;
@@ -7,23 +7,23 @@ interface DataType {
 }
 const service_data: DataType[] = [
   {
-    id: "one",
-    title: "Consultation",
+    id: `one`,
+    title: `Consultation`,
     description: `We begin by understanding your business needs and objectives through in-depth consultations to tailor our services to your unique requirements.`,
   },
   {
-    id: "Two",
-    title: "Strategy",
+    id: `Two`,
+    title: `Strategy`,
     description: `Our experts design a strategic plan that aligns with your goals, ensuring optimal solutions for corporate advisory, property management, and investments.`,
   },
   {
-    id: "Three",
-    title: "Implementation",
+    id: `Three`,
+    title: `Implementation`,
     description: `We put the strategy into action, meticulously executing plans for business setup, property management, talent recruitment, and live performances.`,
   },
   {
-    id: "Four",
-    title: "Support",
+    id: `Four`,
+    title: `Support`,
     description: `We provide ongoing support and continuous optimization to ensure long-term success and efficiency in all aspects of your business operations.`,
   },
 ];
@@ -39,9 +39,7 @@ const Service = () => {
               <div className="cs_hr_design"></div>
               <div className="cs_section_heading cs_style_1 cs_color_1">
                 <div className="cs_section_heading_text">
-                  <h2 className="cs_section_title anim_heading_title">
-                    Our Working Process
-                  </h2>
+                  <h2 className="cs_section_title anim_heading_title">Our Working Process</h2>
                 </div>
               </div>
               <div className="cs_hr_design"></div>

@@ -1,5 +1,5 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 type DataType = {
   title_1: string;
@@ -14,7 +14,7 @@ const hero_data: DataType = {
   title_1: `Creative`,
   title_2: `Design Studio`,
   des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools.`,
-  links: [{ title: "Facebook" }, { title: "Behance" }, { title: "Dribbble" }],
+  links: [{ title: `Facebook` }, { title: `Behance` }, { title: `Dribbble` }],
 };
 const { title_1, title_2, des, links } = hero_data;
 
@@ -25,7 +25,7 @@ const HeroHomeThree = () => {
         <div className="cs_hero cs_style2">
           <div
             className="cs_hero_bg cs_bg cs_parallax_bg"
-            style={{ backgroundImage: "url(/assets/img/design_banner.jpg)" }}
+            style={{ backgroundImage: `url(/assets/img/design_banner.jpg)` }}
           ></div>
           <div className="textupdowns">
             <div className="cs_left_text">
@@ -61,10 +61,7 @@ const HeroHomeThree = () => {
                   <p className="cs_hero_mini_details">{des}</p>
                 </div>
                 <div className="cs_section_heading_right cs_btn_anim">
-                  <Link
-                    href="/portfolio"
-                    className="cs_btn cs_style_1 cs_color_1"
-                  >
+                  <Link href="/portfolio" className="cs_btn cs_style_1 cs_color_1">
                     <span>View Project</span>
                     <svg
                       width="19"

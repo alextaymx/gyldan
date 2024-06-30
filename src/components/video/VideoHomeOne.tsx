@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import React from "react";
+import React from 'react';
 
 const VideoHomeOne = ({ style_2, setIsVideoOpen }: any) => {
   return (
@@ -12,8 +12,8 @@ const VideoHomeOne = ({ style_2, setIsVideoOpen }: any) => {
             onClick={() => setIsVideoOpen(true)}
             className="cs_video_block cs_style1 cs_video_open cs_bg cs_parallax_bg"
             style={{
-              backgroundImage: "url(/assets/img/video_block.jpg)",
-              cursor: "pointer",
+              backgroundImage: `url(/assets/img/video_block.jpg)`,
+              cursor: `pointer`,
             }}
           >
             <span className="cs_player_btn cs_accent_color">

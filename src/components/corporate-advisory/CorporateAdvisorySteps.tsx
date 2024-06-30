@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react';
 
 const stepContent = {
   stepData: [
     {
-      id: "One",
+      id: `One`,
       title: `Consultation & Assessment`,
       description: `We begin with a thorough assessment of your specific needs and goals to ensure a tailored approach.`,
     },
     {
-      id: "Two",
+      id: `Two`,
       title: `Customized Strategy`,
       description: `Based on our assessment, we develop a strategic plan that assigns the right team members and resources to your project.`,
     },
     {
-      id: "Three",
+      id: `Three`,
       title: `Implementation & Support`,
       description: `We execute the plan with precision and provide ongoing support, ensuring all services, including accounting, tax advisory, and business development, are optimized for your success.`,
     },
     {
-      id: "Four",
+      id: `Four`,
       title: `Tailored Solutions & Fees`,
       description: `Our services are tailored to your unique scenario, with customized fees that reflect the specific needs and complexities of your business.`,
     },
@@ -44,10 +44,7 @@ const CorporateAdvisorySteps = () => {
             <div className="cs_work cs_work_1">
               <div className="cs_card_work cs_style_1">
                 {service_data.map((item, i) => (
-                  <div
-                    key={i}
-                    className="cs_card cs_mt_nthchild_0 anim_div_ShowLeftSide"
-                  >
+                  <div key={i} className="cs_card cs_mt_nthchild_0 anim_div_ShowLeftSide">
                     <div className="cs_card cs_style_1">
                       <div className="cs_posagation">
                         <div className="cs_work_style_1"></div>

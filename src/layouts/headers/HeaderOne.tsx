@@ -1,13 +1,14 @@
-"use client";
-import Link from "next/link";
-import MobileMenu from "./MobileMenu";
-import UseSticky from "@/hooks/UseSticky";
-import React, { useEffect, useState } from "react";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
 
-import Image from "next/image";
-import SITE_LOGO from "@/assets/img/logo/gyldan.png";
-import { businessInfo, socialLinks } from "@/data/constants";
-import { menuData } from "@/data/menu_data";
+import SITE_LOGO from '@/assets/img/logo/gyldan.png';
+import { businessInfo, socialLinks } from '@/data/constants';
+import { menuData } from '@/data/menu_data';
+import UseSticky from '@/hooks/UseSticky';
+
+import MobileMenu from './MobileMenu';
 
 // import logo from "@/assets/img/logo.svg";
 // import Logo_white from "@/assets/img/Logo_white.png";
@@ -15,16 +16,16 @@ import { menuData } from "@/data/menu_data";
 const HeaderOne = () => {
   const { sticky } = UseSticky();
 
-  const [active, setActive] = useState<Boolean>(false);
+  const [active, setActive] = useState<boolean>(false);
   const handleActive = () => {
     setActive(!active);
   };
 
-  const [navTitle, setNavTitle] = useState("");
+  const [navTitle, setNavTitle] = useState(``);
   //openMobileMenu
   const openMobileMenu = (menu: string) => {
     if (navTitle === menu) {
-      setNavTitle("");
+      setNavTitle(``);
     } else {
       setNavTitle(menu);
     }
@@ -33,41 +34,38 @@ const HeaderOne = () => {
   const [lastScrollTop, setLastScrollTop] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
-      const header = document.querySelector(
-        ".cs_sticky_header"
-      ) as HTMLElement | null;
+      const header = document.querySelector(`.cs_sticky_header`) as HTMLElement | null;
 
       if (!header) {
-        console.error("Sticky header element not found");
+        console.error(`Sticky header element not found`);
         return;
       }
 
       const headerHeight = header.offsetHeight + 30;
-      const windowTop =
-        window.pageYOffset || document.documentElement.scrollTop;
+      const windowTop = window.pageYOffset || document.documentElement.scrollTop;
 
       if (windowTop >= headerHeight) {
-        header.classList.add("cs_gescout_sticky");
+        header.classList.add(`cs_gescout_sticky`);
       } else {
-        header.classList.remove("cs_gescout_sticky");
-        header.classList.remove("cs_gescout_show");
+        header.classList.remove(`cs_gescout_sticky`);
+        header.classList.remove(`cs_gescout_show`);
       }
 
-      if (header.classList.contains("cs_gescout_sticky")) {
+      if (header.classList.contains(`cs_gescout_sticky`)) {
         if (windowTop < lastScrollTop) {
-          header.classList.add("cs_gescout_show");
+          header.classList.add(`cs_gescout_show`);
         } else {
-          header.classList.remove("cs_gescout_show");
+          header.classList.remove(`cs_gescout_show`);
         }
       }
 
       setLastScrollTop(windowTop);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener(`scroll`, handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener(`scroll`, handleScroll);
     };
   }, [lastScrollTop]);
 
@@ -75,7 +73,7 @@ const HeaderOne = () => {
     <>
       <header
         className={`cs_site_header cs_style1 cs_sticky_header cs_site_header_full_width ${
-          sticky ? "cs_gescout_sticky" : ""
+          sticky ? `cs_gescout_sticky` : ``
         }`}
       >
         <div className="cs_main_header">
@@ -91,15 +89,9 @@ const HeaderOne = () => {
               </div>
               <div className="cs_main_header_right">
                 <div className="cs_nav cs_medium">
-                  <MobileMenu
-                    active={active}
-                    navTitle={navTitle}
-                    openMobileMenu={openMobileMenu}
-                  />
+                  <MobileMenu active={active} navTitle={navTitle} openMobileMenu={openMobileMenu} />
                   <span
-                    className={`cs_munu_toggle ${
-                      active ? "cs_toggle_active" : ""
-                    }`}
+                    className={`cs_munu_toggle ${active ? `cs_toggle_active` : ``}`}
                     onClick={handleActive}
                   >
                     <span></span>
@@ -121,7 +113,7 @@ const HeaderOne = () => {
         </div>
       </header>
 
-      <div className={`cs_side_header ${active ? "active" : ""}`}>
+      <div className={`cs_side_header ${active ? `active` : ``}`}>
         <button className="cs_close" onClick={handleActive}></button>
         <div className="cs_side_header_overlay"></div>
         <div className="cs_side_header_in">
@@ -137,7 +129,7 @@ const HeaderOne = () => {
                       <li
                         key={i}
                         className={`menu-item-has-black-section cs_style_1 ${
-                          navTitle === item.title ? "active" : ""
+                          navTitle === item.title ? `active` : ``
                         }`}
                       >
                         <Link href={item.link}>{item.title}</Link>
@@ -145,22 +137,19 @@ const HeaderOne = () => {
                           <>
                             <ul
                               style={{
-                                display:
-                                  navTitle === item.title ? "block" : "none",
+                                display: navTitle === item.title ? `block` : `none`,
                               }}
                             >
                               {item?.sub_menu?.map((sub_item, index) => (
                                 <li key={index}>
-                                  <Link href={sub_item.link}>
-                                    {sub_item.title}
-                                  </Link>
+                                  <Link href={sub_item.link}>{sub_item.title}</Link>
                                 </li>
                               ))}
                             </ul>
                             <span
                               onClick={() => openMobileMenu(item.title)}
                               className={`cs_munu_dropdown_toggle_1 ${
-                                navTitle === item.title ? "active" : ""
+                                navTitle === item.title ? `active` : ``
                               }`}
                             ></span>
                           </>

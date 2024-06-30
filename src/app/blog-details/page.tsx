@@ -1,18 +1,15 @@
-
-'use client'
-import AboutHomeFour from '@/components/about/AboutHomeFour';
-import BlogDetails from '@/components/details/BlogDetails';
-import Wrapper from '@/layouts/Wrapper';
-import FooterOne from '@/layouts/footers/FooterOne';
-import HeaderOne from '@/layouts/headers/HeaderOne';
+'use client';
 import React from 'react';
 
-
+import AboutHomeFour from '@/components/about/AboutHomeFour';
+import BlogDetails from '@/components/details/BlogDetails';
+import FooterOne from '@/layouts/footers/FooterOne';
+import HeaderOne from '@/layouts/headers/HeaderOne';
+import Wrapper from '@/layouts/Wrapper';
 
 // export const metadata = {
 //   title: "Blog Details Vixan - Digital  Creative Agency Next js Template",
 // };
-
 
 const index = () => {
   return (

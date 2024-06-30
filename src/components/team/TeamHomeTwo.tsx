@@ -1,8 +1,9 @@
-"use client";
-import team_data from "@/data/team_data";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+
+import team_data from '@/data/team_data';
 
 type DataType = {
   sub_title: string;
@@ -10,10 +11,10 @@ type DataType = {
   title_2: string;
 };
 const team_content: DataType = {
-  sub_title: "Our Team",
-  title: "Excellence Team That Can Digitalize Your Brand",
+  sub_title: `Our Team`,
+  title: `Excellence Team That Can Digitalize Your Brand`,
 
-  title_2: " Our Excellence Team That Can Digitalize Your Brand",
+  title_2: ` Our Excellence Team That Can Digitalize Your Brand`,
 };
 const { sub_title, title, title_2 } = team_content;
 
@@ -27,12 +28,8 @@ const TeamHomeTwo = ({ style_2, style_3 }: any) => {
         <div className="container">
           <div className="cs_section_heading cs_style_1 cs_type_1">
             <div className="cs_section_heading_text">
-              <div className="cs_section_subtitle anim_div_ShowZoom">
-                {sub_title}
-              </div>
-              <h2 className="cs_section_title anim_heading_title">
-                {style_2 ? title_2 : title}
-              </h2>
+              <div className="cs_section_subtitle anim_div_ShowZoom">{sub_title}</div>
+              <h2 className="cs_section_title anim_heading_title">{style_2 ? title_2 : title}</h2>
             </div>
             <div className="cs_section_heading_right cs_btn_anim">
               <Link href="/team" className="cs_btn cs_style_1">

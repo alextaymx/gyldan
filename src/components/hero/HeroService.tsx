@@ -1,6 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import serviceData from "@/data/service_data";
+import Link from 'next/link';
+import React from 'react';
+
+import serviceData from '@/data/service_data';
 
 const HeroService = () => {
   return (
@@ -38,7 +39,7 @@ const HeroService = () => {
                   </div>
                 </div>
                 <div className="cs_card_link_wrap">
-                  <Link href={item.link ?? ""} className="cs_card_link">
+                  <Link href={item.link ?? ``} className="cs_card_link">
                     <span>
                       <svg
                         width="30"

@@ -1,14 +1,14 @@
-import { StaticImageData } from "next/image";
+import { StaticImageData } from 'next/image';
 
-import blog_img_1 from "@/assets/img/post_1.jpg";
-import blog_img_2 from "@/assets/img/post_2.jpg";
-import blog_img_3 from "@/assets/img/post_3.jpg";
-import blog_img_4 from "@/assets/img/post_4.jpg";
-import blog_img_5 from "@/assets/img/post_5.jpg";
-import blog_img_6 from "@/assets/img/post_6.jpg";
-import blog_img_7 from "@/assets/img/post_7.jpg";
-import blog_img_8 from "@/assets/img/post_8.jpg";
-import blog_img_9 from "@/assets/img/post_9.jpg";
+import blog_img_1 from '@/assets/img/post_1.jpg';
+import blog_img_2 from '@/assets/img/post_2.jpg';
+import blog_img_3 from '@/assets/img/post_3.jpg';
+import blog_img_4 from '@/assets/img/post_4.jpg';
+import blog_img_5 from '@/assets/img/post_5.jpg';
+import blog_img_6 from '@/assets/img/post_6.jpg';
+import blog_img_7 from '@/assets/img/post_7.jpg';
+import blog_img_8 from '@/assets/img/post_8.jpg';
+import blog_img_9 from '@/assets/img/post_9.jpg';
 
 interface DataType {
   id: number;

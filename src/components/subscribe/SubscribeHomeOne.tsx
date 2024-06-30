@@ -1,5 +1,5 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 
 const SubscribeHomeOne = () => {
   const handleSuubmit = (e: any) => {
@@ -59,11 +59,7 @@ const SubscribeHomeOne = () => {
           </div>
           <div className="cs_height_70 cs_height_lg_40"></div>
           <form className="cs_newsletter_form" onSubmit={handleSuubmit}>
-            <input
-              type="text"
-              className="cs_newsletter_input"
-              placeholder="Enter Your Email"
-            />
+            <input type="text" className="cs_newsletter_input" placeholder="Enter Your Email" />
             <button className="cs_newsletter_btn">
               <svg
                 width="30"

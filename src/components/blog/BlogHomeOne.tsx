@@ -1,11 +1,10 @@
-"use client";
-import Link from "next/link";
-import React from "react";
+'use client';
+import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import Image, { StaticImageData } from "next/image";
-import blog_data from "@/data/blog_data";
+import blog_data from '@/data/blog_data';
 
 const BlogHomeOne = ({ style_2, style_3 }: any) => {
   return (
@@ -23,9 +22,7 @@ const BlogHomeOne = ({ style_2, style_3 }: any) => {
           ) : (
             <div className="cs_section_heading cs_style_1 cs_type_1">
               <div className="cs_section_heading_text">
-                <div className="cs_section_subtitle anim_div_ShowZoom">
-                  Our Blog
-                </div>
+                <div className="cs_section_subtitle anim_div_ShowZoom">Our Blog</div>
                 <h2 className="cs_section_title anim_heading_title">
                   New Day <br />
                   New Inspiration
@@ -55,14 +52,12 @@ const BlogHomeOne = ({ style_2, style_3 }: any) => {
             loop={true}
             speed={1000}
             spaceBetween={30}
-            slidesPerView={"auto"}
+            slidesPerView={`auto`}
             pagination={{
-              el: ".cs_pagination",
+              el: `.cs_pagination`,
               clickable: true,
             }}
-            className={`cs_slider cs_slider_3 anim_blog ${
-              style_2 ? "" : "style_slider"
-            }`}
+            className={`cs_slider cs_slider_3 anim_blog ${style_2 ? `` : `style_slider`}`}
           >
             {blog_data.map((item, i) => (
               <SwiperSlide key={i} className="swiper-slide">
@@ -82,9 +77,7 @@ const BlogHomeOne = ({ style_2, style_3 }: any) => {
           </Swiper>
         </div>
       </section>
-      {style_2 ? null : style_3 ? null : (
-        <div className="cs_height_150 cs_height_lg_60"></div>
-      )}
+      {style_2 ? null : style_3 ? null : <div className="cs_height_150 cs_height_lg_60"></div>}
     </>
   );
 };

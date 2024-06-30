@@ -1,23 +1,24 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import Wrapper from "@/layouts/Wrapper";
-import HeaderOne from "@/layouts/headers/HeaderOne";
-import HeroHomeTwo from "@/components/hero/HeroHomeTwo";
-import VideoHomeTwo from "@/components/video/VideoHomeTwo";
-import InnovativeHomeTwo from "@/components/innovative/InnovativeHomeTwo";
-import MarqueeAreaHomeTwo from "@/components/brand/MarqueeAreaHomeTwo";
-import FeatureHomeTwo from "@/components/feature/FeatureHomeTwo";
-import ServiceHomeTwo from "@/components/service/ServiceHomeTwo";
-import PortfolioHomeOne from "@/components/portfolio/PortfolioHomeOne";
-import AwardsHomeOne from "@/components/awards/AwardsHomeOne";
-import Testimonial from "@/components/testimonial/Testimonial";
-import TeamHomeTwo from "@/components/team/TeamHomeTwo";
-import BrandHomeOne from "@/components/brand/BrandHomeOne";
-import AboutUs from "@/components/about/AboutUs";
-import BlogHomeTwo from "@/components/blog/BlogHomeTwo";
-import FooterOne from "@/layouts/footers/FooterOne";
-import VideoPopup from "@/components/modals/VideoPopup";
+import React, { useState } from 'react';
+
+import AboutUs from '@/components/about/AboutUs';
+import AwardsHomeOne from '@/components/awards/AwardsHomeOne';
+import BlogHomeTwo from '@/components/blog/BlogHomeTwo';
+import BrandHomeOne from '@/components/brand/BrandHomeOne';
+import MarqueeAreaHomeTwo from '@/components/brand/MarqueeAreaHomeTwo';
+import FeatureHomeTwo from '@/components/feature/FeatureHomeTwo';
+import HeroHomeTwo from '@/components/hero/HeroHomeTwo';
+import InnovativeHomeTwo from '@/components/innovative/InnovativeHomeTwo';
+import VideoPopup from '@/components/modals/VideoPopup';
+import PortfolioHomeOne from '@/components/portfolio/PortfolioHomeOne';
+import ServiceHomeTwo from '@/components/service/ServiceHomeTwo';
+import TeamHomeTwo from '@/components/team/TeamHomeTwo';
+import Testimonial from '@/components/testimonial/Testimonial';
+import VideoHomeTwo from '@/components/video/VideoHomeTwo';
+import FooterOne from '@/layouts/footers/FooterOne';
+import HeaderOne from '@/layouts/headers/HeaderOne';
+import Wrapper from '@/layouts/Wrapper';
 
 // export const metadata = {
 //   title: "Startup Agency - Creative Agency Next js Template",
@@ -54,7 +55,7 @@ const index = () => {
       <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
-        videoId={"Qj06rNemNI8"}
+        videoId={`Qj06rNemNI8`}
       />
       {/* video modal end */}
     </Wrapper>

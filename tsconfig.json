@@ -3,16 +3,13 @@
     "target": "ES2022",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
-
     // Misc
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-
     // Module resolution
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-
     // Strict type-checking
     "strict": true,
     "noImplicitAny": true,
@@ -21,7 +18,6 @@
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-
     // Additional checks
     // "noUnusedLocals": true,
     // "noUnusedParameters": true,
@@ -33,9 +29,12 @@
     "resolveJsonModule": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [{ "name": "next" }],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "baseUrl": ".",
-
     "paths": {
       "@/*": ["./src/*"],
       "@/public/*": ["./public/*"],
@@ -49,6 +48,12 @@
       "@/plugins/*": ["./src/plugins/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts, globals.d.ts",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }

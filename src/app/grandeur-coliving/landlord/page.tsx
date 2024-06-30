@@ -1,25 +1,24 @@
-'use client';
-
 import React from 'react';
 
 import AboutHomeFour from '@/components/about/AboutHomeFour';
-import PortfolioDetailsArea from '@/components/details/PortfolioDetailsArea';
+import CorporateAdvisoryIntro from '@/components/corporate-advisory/CorporateAdvisoryIntro';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import Wrapper from '@/layouts/Wrapper';
 
-// export const metadata = {
-//   title: "Portfolio Details Vixan - Digital  Creative Agency Next js Template",
-// };
+import GrandeurIntro from '../GrandeurIntro';
 
-const index = () => {
+type Props = {};
+
+function index({}: Props) {
   return (
     <Wrapper>
       <HeaderOne />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <PortfolioDetailsArea />
+            <GrandeurIntro />
+
             <AboutHomeFour />
           </main>
           <FooterOne />
@@ -27,6 +26,6 @@ const index = () => {
       </div>
     </Wrapper>
   );
-};
+}
 
 export default index;

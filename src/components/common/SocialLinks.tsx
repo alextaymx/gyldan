@@ -1,5 +1,6 @@
-import { socialLinks } from "@/data/constants";
-import Link from "next/link";
+import Link from 'next/link';
+
+import { socialLinks } from '@/data/constants';
 
 // hero social links home three
 interface HDataType {
@@ -12,12 +13,7 @@ export const SocialLinks = () => {
   return (
     <>
       {hero_link_home_three.map((h_item, h_index) => (
-        <Link
-          key={h_index}
-          href={h_item.link}
-          className="cs_center"
-          target="_blank"
-        >
+        <Link key={h_index} href={h_item.link} className="cs_center" target="_blank">
           {h_item.title}
         </Link>
       ))}

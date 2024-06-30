@@ -1,9 +1,10 @@
-import React from "react";
-import agency_story_1 from "@/assets/img/agency_story_1.jpg";
-import agency_story_2 from "@/assets/img/agency_story_2.jpg";
-import agency_story_4 from "@/assets/img/agency_story_4.jpg";
-import agency_story_3 from "@/assets/img/agency_story_3.jpg";
-import Image from "next/image";
+import Image from 'next/image';
+import React from 'react';
+
+import agency_story_1 from '@/assets/img/agency_story_1.jpg';
+import agency_story_2 from '@/assets/img/agency_story_2.jpg';
+import agency_story_3 from '@/assets/img/agency_story_3.jpg';
+import agency_story_4 from '@/assets/img/agency_story_4.jpg';
 
 interface DataType {
   subtitle: string;
@@ -29,9 +30,7 @@ const About = () => {
               <div className="cs_hr_design"></div>
               <div className="cs_section_heading cs_style_1 cs_color_1">
                 <div className="cs_section_heading_text">
-                  <h2 className="cs_section_title anim_heading_title">
-                    {subtitle}
-                  </h2>
+                  <h2 className="cs_section_title anim_heading_title">{subtitle}</h2>
                 </div>
               </div>
               <div className="cs_hr_design"></div>
@@ -42,9 +41,7 @@ const About = () => {
                 <div className="col-md-6 col-sm-12">
                   <div className="cs_section_heading cs_style_1 cs_color_1">
                     <div className="cs_section_heading_text">
-                      <h3 className="cs_section_title_3 anim_div_ShowLeftSide">
-                        {title}
-                      </h3>
+                      <h3 className="cs_section_title_3 anim_div_ShowLeftSide">{title}</h3>
                     </div>
                   </div>
                 </div>
@@ -69,11 +66,7 @@ const About = () => {
             <div className="cs_img_section_3">
               <div className="text-end">
                 <Image src={agency_story_4} alt="image-here" />
-                <Image
-                  src={agency_story_3}
-                  className="w-100"
-                  alt="image-here"
-                />
+                <Image src={agency_story_3} className="w-100" alt="image-here" />
               </div>
             </div>
           </div>

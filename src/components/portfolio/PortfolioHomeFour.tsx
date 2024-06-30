@@ -1,4 +1,6 @@
 'use client';
+import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 import portfolio_img_1 from '@/assets/img/recent_project_1.jpg';
@@ -10,8 +12,6 @@ import portfolio_img_6 from '@/assets/img/recent_project_6.jpg';
 import portfolio_img_7 from '@/assets/img/recent_project_7.jpg';
 import portfolio_img_8 from '@/assets/img/recent_project_8.jpg';
 import portfolio_img_9 from '@/assets/img/recent_project_9.jpg';
-import Image, { StaticImageData } from 'next/image';
-import Link from 'next/link';
 
 interface DataType {
   id: number;
@@ -24,82 +24,79 @@ interface DataType {
 const portfolio_data: DataType[] = [
   {
     id: 1,
-    category: "UI Design",
+    category: `UI Design`,
     img: portfolio_img_1,
-    title: "Project Task Management",
-    subtitle: "Digital Services / App Design",
+    title: `Project Task Management`,
+    subtitle: `Digital Services / App Design`,
   },
   {
     id: 2,
-    category: "UX Design",
+    category: `UX Design`,
     img: portfolio_img_2,
-    title: "Project Task Management",
-    subtitle: "Digital Services / App Design",
+    title: `Project Task Management`,
+    subtitle: `Digital Services / App Design`,
   },
   {
     id: 3,
-    category: "Development",
+    category: `Development`,
     img: portfolio_img_3,
-    title: "Project Task Management",
-    subtitle: "Digital Services / App Design",
+    title: `Project Task Management`,
+    subtitle: `Digital Services / App Design`,
   },
   {
     id: 4,
-    category: "Finance",
+    category: `Finance`,
     img: portfolio_img_4,
-    title: "Project Task Management",
-    subtitle: "Digital Services / App Design",
+    title: `Project Task Management`,
+    subtitle: `Digital Services / App Design`,
   },
   {
     id: 5,
-    category: "Finance",
+    category: `Finance`,
     img: portfolio_img_5,
-    title: "Project Task Management",
-    subtitle: "Digital Services / App Design",
+    title: `Project Task Management`,
+    subtitle: `Digital Services / App Design`,
   },
   {
     id: 6,
-    category: "Development",
+    category: `Development`,
     img: portfolio_img_6,
-    title: "Project Task Management",
-    subtitle: "Digital Services / App Design",
+    title: `Project Task Management`,
+    subtitle: `Digital Services / App Design`,
   },
   {
     id: 7,
-    category: "UX Design",
+    category: `UX Design`,
     img: portfolio_img_7,
-    title: "Project Task Management",
-    subtitle: "Digital Services / App Design",
+    title: `Project Task Management`,
+    subtitle: `Digital Services / App Design`,
   },
   {
     id: 8,
-    category: "UI Design",
+    category: `UI Design`,
     img: portfolio_img_8,
-    title: "Project Task Management",
-    subtitle: "Digital Services / App Design",
+    title: `Project Task Management`,
+    subtitle: `Digital Services / App Design`,
   },
   {
     id: 9,
-    category: "Development",
+    category: `Development`,
     img: portfolio_img_9,
-    title: "Project Task Management",
-    subtitle: "Digital Services / App Design",
+    title: `Project Task Management`,
+    subtitle: `Digital Services / App Design`,
   },
-]
-
-
+];
 
 // data
-const categories = ["All", ...new Set(portfolio_data.map((item) => item.category))]; 
+const categories = [`All`, ...new Set(portfolio_data.map((item) => item.category))];
 
 const PortfolioHomeFour = () => {
-
-  const [activeCategory, setActiveCategory] = useState("All");
-  const [items, setItems] = useState(portfolio_data); 
+  const [activeCategory, setActiveCategory] = useState(`All`);
+  const [items, setItems] = useState(portfolio_data);
 
   const filterItems = (cateItem: string) => {
-    setActiveCategory(cateItem); 
-    if (cateItem === "All") {
+    setActiveCategory(cateItem);
+    if (cateItem === `All`) {
       return setItems(portfolio_data);
     } else {
       const findItems = portfolio_data.filter((findItem) => {
@@ -109,17 +106,13 @@ const PortfolioHomeFour = () => {
     }
   };
 
-
-
   return (
     <>
       <section>
         <div className="container">
           <div className="cs_section_heading cs_style_1">
             <div className="cs_section_heading_text">
-              <h2 className="cs_section_title anim_heading_title">
-                Some Recent Project
-              </h2>
+              <h2 className="cs_section_title anim_heading_title">Some Recent Project</h2>
             </div>
           </div>
           <div className="cs_height_50 cs_height_lg_30"></div>
@@ -131,13 +124,13 @@ const PortfolioHomeFour = () => {
                     <React.Fragment key={i}>
                       <li
                         onClick={() => filterItems(cate)}
-                        className={`${cate === activeCategory ? "active" : ""}`}
+                        className={`${cate === activeCategory ? `active` : ``}`}
                       >
                         {cate}
-                      </li>  {' '}
+                      </li>
+                      {` `}
                     </React.Fragment>
                   ))}
-
                 </ul>
               </div>
             </div>
@@ -156,12 +149,10 @@ const PortfolioHomeFour = () => {
                           <p className="cs_subtitle">{item.subtitle}</p>
                         </div>
                       </Link>
-                    </div> 
+                    </div>
                   </React.Fragment>
                 ))}
-
-              </div> 
-
+              </div>
             </div>
           </div>
         </div>

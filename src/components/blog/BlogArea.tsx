@@ -1,6 +1,7 @@
-import blog_data from "@/data/blog_data";
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
+
+import blog_data from '@/data/blog_data';
 
 const BlogArea = () => {
   return (
@@ -28,9 +29,9 @@ const BlogArea = () => {
             {blog_data.map((item, i) => (
               <div
                 key={i}
-                className={`col-md-4 ${item.id === 2 ? "mt-0 mt-md-5" : ""} ${
-                  item.id === 5 ? "mt-0 mt-md-5" : ""
-                } ${item.id === 8 ? "mt-0 mt-md-5" : ""}`}
+                className={`col-md-4 ${item.id === 2 ? `mt-0 mt-md-5` : ``} ${
+                  item.id === 5 ? `mt-0 mt-md-5` : ``
+                } ${item.id === 8 ? `mt-0 mt-md-5` : ``}`}
               >
                 <div className="anim_div_ShowDowns">
                   <Link href="/blog-details" className="cs_blog cs_style_1">

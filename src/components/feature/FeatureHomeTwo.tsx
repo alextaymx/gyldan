@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface DataType {
   subtitle: string;
@@ -28,13 +28,13 @@ const feature_data: DataType = {
   features: [
     {
       id: 1,
-      title: "Comprehensive Business Solutions",
+      title: `Comprehensive Business Solutions`,
       des_1: `Guidance and support`,
       des_2: `At Gyldan Corporate Advisory, we offer strategic consulting, implementation, and ongoing support to help businesses navigate setup, accounting, taxation, and compliance. Our expert guidance ensures your business thrives.`,
     },
     {
       id: 2,
-      title: "Innovative Property and Investment Management",
+      title: `Innovative Property and Investment Management`,
       des_1: `Optimize revenue`,
       des_2: `Gyldan specializes in property management and investment, providing insights and strategies to optimize revenue and efficiency. We create harmonious coliving communities and offer exceptional investment opportunities.`,
     },
@@ -44,23 +44,14 @@ const feature_data: DataType = {
   subtitle_2: `Why Choose Us`,
   title_2: `Maximizing Your Online Presence Digital Marketing Mastery`,
 };
-const {
-  subtitle,
-  title,
-  des,
-  boxtitle,
-  box_des_1,
-  box_des_2,
-  features,
-  subtitle_2,
-  title_2,
-} = feature_data;
+const { subtitle, title, des, boxtitle, box_des_1, box_des_2, features, subtitle_2, title_2 } =
+  feature_data;
 
 const FeatureHomeTwo = ({ style_2 }: any) => {
   return (
     <>
       {style_2 ? null : <div className="cs_height_150 cs_height_lg_60"></div>}
-      <section className={`cs_shape_wrap_3 ${style_2 ? "cs_gray_bg_20" : ""}`}>
+      <section className={`cs_shape_wrap_3 ${style_2 ? `cs_gray_bg_20` : ``}`}>
         {style_2 ? <div className="cs_height_90 cs_height_lg_60"></div> : null}
 
         {style_2 ? null : (
@@ -97,11 +88,7 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
         )}
 
         <div className="container">
-          <div
-            className={`row ${
-              style_2 ? "flex-column flex-lg-row align-items-center" : ""
-            }`}
-          >
+          <div className={`row ${style_2 ? `flex-column flex-lg-row align-items-center` : ``}`}>
             <div className="col-lg-8 col-12">
               <div className="cs_section_heading cs_style_1">
                 <div className="cs_section_heading_text">
@@ -124,7 +111,8 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
                   <p className="cs_font_16 cs_secend_section">{des}</p>
                   <div className="cs_service_back_btn">
                     <a href="#" className="cs_style_1 cs_color_1">
-                      <span className="cs_font_18">Learn More</span>{" "}
+                      <span className="cs_font_18">Learn More</span>
+                      {` `}
                       <svg
                         width="19"
                         height="13"
@@ -144,9 +132,7 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
                   <h6>{boxtitle}</h6>
                   <div className="d-flex align-items-center">
                     <div className="cs_hr"></div>
-                    <p className="cs_font_16 cs_normal cs_mp0 text-nowrap">
-                      {box_des_1}
-                    </p>
+                    <p className="cs_font_16 cs_normal cs_mp0 text-nowrap">{box_des_1}</p>
                   </div>
                   <p className="cs_font_16 cs_mp0">{box_des_2}</p>
                 </div>
@@ -159,9 +145,7 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
                     <h6>{item.title}</h6>
                     <div className="d-flex align-items-center">
                       <div className="cs_hr"></div>
-                      <p className="cs_font_16 cs_normal cs_mp0 text-nowrap">
-                        {item.des_1}
-                      </p>
+                      <p className="cs_font_16 cs_normal cs_mp0 text-nowrap">{item.des_1}</p>
                     </div>
                     <p className="cs_font_16 cs_mp0">{item.des_2}</p>
                   </div>

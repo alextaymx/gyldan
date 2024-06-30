@@ -1,7 +1,8 @@
-"use client";
+'use client';
 
-import React from "react";
-import { businessInfo } from "@/data/constants";
+import React from 'react';
+
+import { businessInfo } from '@/data/constants';
 
 const info = businessInfo;
 
@@ -14,12 +15,8 @@ const ContactArea = () => {
           <div className="cs_contact_ms">
             <div className="cs_contact">
               <div className="cs_contact_text">
-                <p className="cs_contact_subtitle anim_text_upanddowns">
-                  Contact Us
-                </p>
-                <h1 className="cs_contact_title anim_text_writting">
-                  Get in Touch
-                </h1>
+                <p className="cs_contact_subtitle anim_text_upanddowns">Contact Us</p>
+                <h1 className="cs_contact_title anim_text_writting">Get in Touch</h1>
               </div>
               <div className="cs_height_80 cs_height_lg_20"></div>
               <div className="cs_from anim_div_ShowDowns">
@@ -91,10 +88,7 @@ const ContactArea = () => {
                     </label>
                   </div>
                   <div className="cs_height_60 cs_height_lg_60"></div>
-                  <button
-                    type="submit"
-                    className="cs_btn cs_style_1 cs_type_btn"
-                  >
+                  <button type="submit" className="cs_btn cs_style_1 cs_type_btn">
                     <span>Send Now</span>
                     <svg
                       width="19"
@@ -113,10 +107,7 @@ const ContactArea = () => {
               </div>
             </div>
             <div className="cs_contact_section_2 anim_div_ShowRightSide">
-              <div
-                className="cs_google_map cs_bg"
-                data-src="assets/img/map_img.png"
-              >
+              <div className="cs_google_map cs_bg" data-src="assets/img/map_img.png">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127482.66733716433!2d101.60458803530021!3d3.138674072865522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362abd08e7d3%3A0x232e1ff540d86c99!2sKuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1719215424395!5m2!1sen!2smy"
                   allowFullScreen={true}
@@ -128,10 +119,7 @@ const ContactArea = () => {
               <div className="row">
                 <div className="col-md-4">
                   <div className="cs_icon">
-                    <a
-                      href="https://www.google.com/maps"
-                      className="cs_icon_style"
-                    >
+                    <a href="https://www.google.com/maps" className="cs_icon_style">
                       <i>
                         <svg
                           width="14"
@@ -186,11 +174,7 @@ const ContactArea = () => {
                       <div className="cs_icon_subtitle">{info.phone}</div>
                       <div className="cs_icon_subtitle">
                         {info.whatsapp}
-                        <a
-                          href={info.whatsappLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        <a href={info.whatsappLink} target="_blank" rel="noopener noreferrer">
                           (WhatsApp)
                         </a>
                       </div>

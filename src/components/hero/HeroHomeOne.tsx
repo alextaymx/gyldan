@@ -1,8 +1,9 @@
-"use client";
-import { companySlider } from "@/data/constants";
-import Link from "next/link";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+'use client';
+import Link from 'next/link';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { companySlider } from '@/data/constants';
 
 const HeroHomeOne = () => {
   return (
@@ -47,7 +48,7 @@ const HeroHomeOne = () => {
                     <div className="cs_hero_btn_wrap">
                       <div className="cs_round_btn_wrap">
                         <Link
-                          href={item.link ? item.link : ""}
+                          href={item.link ? item.link : ``}
                           className="cs_hero_btn cs_round_btn btn-item"
                         >
                           <span></span>

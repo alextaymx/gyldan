@@ -1,6 +1,7 @@
-import React from "react";
-import Image from "next/image";
-import banner_img from "@/assets/img/service_details_banner.jpg";
+import Image from 'next/image';
+import React from 'react';
+
+import banner_img from '@/assets/img/service_details_banner.jpg';
 
 interface DataType {
   title: string;
@@ -8,7 +9,7 @@ interface DataType {
   features: string[];
 }
 const hero_contact: DataType = {
-  title: "GYLDAN CORPORATE ADVISORY",
+  title: `GYLDAN CORPORATE ADVISORY`,
   description: `From consulting and strategy development to implementation and support, our comprehensive services can help your business thrive.`,
   features: [
     `Company Formation & Secretarial Services`,
@@ -43,7 +44,7 @@ function CorporateAdvisoryIntro({}: Props) {
             </div>
             <div className="cs_service_details_text">
               <div className="cs_service_details_p">
-                <p className="anim_text" style={{ whiteSpace: "pre-line" }}>
+                <p className="anim_text" style={{ whiteSpace: `pre-line` }}>
                   {description}
                 </p>
                 <ul className="anim_div_ShowDowns">

@@ -1,10 +1,11 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+
 // import footer_logo from "@/assets/img/footer_logo.svg";
-import SITE_LOGO from "@/assets/img/logo/gyldan.png";
-import { CopyRight, SocialLinks } from "@/components/common/SocialLinks";
-import { businessInfo } from "@/data/constants";
+import SITE_LOGO from '@/assets/img/logo/gyldan.png';
+import { CopyRight, SocialLinks } from '@/components/common/SocialLinks';
+import { businessInfo } from '@/data/constants';
 
 interface DataType {
   email: string;
@@ -27,16 +28,15 @@ const footer_data: DataType = {
   location: businessInfo.address,
   footer_info: `Welcome to Gyldan, your digital agency specializing in enhancing business success online. Partner with Gyldan to unlock new opportunities and drive growth today.`,
   links: [
-    { title: `HOME`, link: "/" },
-    { title: `ABOUT`, link: "/about" },
-    { title: `SERVICES`, link: "/service" },
-    { title: `PORTFOLIO`, link: "/portfolio" },
-    { title: `BLOG`, link: "/blog" },
-    { title: `CONTACT US`, link: "/contact" },
+    { title: `HOME`, link: `/` },
+    { title: `ABOUT`, link: `/about` },
+    { title: `SERVICES`, link: `/service` },
+    { title: `PORTFOLIO`, link: `/portfolio` },
+    { title: `BLOG`, link: `/blog` },
+    { title: `CONTACT US`, link: `/contact` },
   ],
 };
-const { footer_info, email, links, location, phone, whatsapp, whatsappLink } =
-  footer_data;
+const { footer_info, email, links, location, phone, whatsapp, whatsappLink } = footer_data;
 
 const FooterOne = () => {
   return (
@@ -49,10 +49,7 @@ const FooterOne = () => {
               <div className="cs_footer_info">
                 <Image src={SITE_LOGO} width={94} height={32} alt="Logo" />
                 <p>{footer_info}</p>
-                <a
-                  href={`mailto:${email}`}
-                  className="cs_primary_font anim_text_upanddowns"
-                >
+                <a href={`mailto:${email}`} className="cs_primary_font anim_text_upanddowns">
                   <span>{email}</span>
                 </a>
               </div>
@@ -106,11 +103,7 @@ const FooterOne = () => {
                   <div>{phone}</div>
                   <div>{whatsapp}</div>
                   <div>
-                    <a
-                      href={whatsappLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                       (WhatsApp)
                     </a>
                   </div>
@@ -150,8 +143,9 @@ const FooterOne = () => {
         </div>
         <div className="cs_copyright text-center">
           <div className="container">
-            {" "}
-            <CopyRight />{" "}
+            {` `}
+            <CopyRight />
+            {` `}
           </div>
         </div>
       </footer>

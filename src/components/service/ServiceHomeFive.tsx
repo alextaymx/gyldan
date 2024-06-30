@@ -1,9 +1,10 @@
-"use client";
+'use client';
 
-import React from "react";
-import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import serviceData from "@/data/service_data";
+import Link from 'next/link';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import serviceData from '@/data/service_data';
 
 const ServiceHomeFive = () => {
   return (
@@ -12,9 +13,7 @@ const ServiceHomeFive = () => {
         <div className="container">
           <div className="cs_section_heading cs_style_1 cs_type_1">
             <div className="cs_section_heading_text">
-              <div className="cs_section_subtitle anim_div_ShowZoom">
-                Services
-              </div>
+              <div className="cs_section_subtitle anim_div_ShowZoom">Services</div>
               <h2 className="cs_section_title anim_heading_title">
                 Digital Marketing Strategy <br />
                 Transformation
@@ -26,9 +25,9 @@ const ServiceHomeFive = () => {
             loop={true}
             speed={1000}
             autoplay={false}
-            slidesPerView={"auto"}
+            slidesPerView={`auto`}
             spaceBetween={30}
-            pagination={{ el: ".cs_pagination", clickable: true }}
+            pagination={{ el: `.cs_pagination`, clickable: true }}
             className="cs_slider cs_slider_3 cs_row_slider anim_blog"
           >
             {serviceData.map((item, i) => (
@@ -40,10 +39,7 @@ const ServiceHomeFive = () => {
                     </h6>
                     <p className="cs_m0 cs_color_1">{item.description}</p>
                     <div className="cs_section_heading_right">
-                      <Link
-                        href="/service-details"
-                        className="cs_btn cs_style_1 cs_color_1"
-                      >
+                      <Link href="/service-details" className="cs_btn cs_style_1 cs_color_1">
                         <span>View More</span>
                         <svg
                           width="19"

@@ -1,7 +1,8 @@
-import React from "react";
-import Link from "next/link";
-import HeaderOne from "@/layouts/headers/HeaderOne";
-import FooterOne from "@/layouts/footers/FooterOne";
+import Link from 'next/link';
+import React from 'react';
+
+import FooterOne from '@/layouts/footers/FooterOne';
+import HeaderOne from '@/layouts/headers/HeaderOne';
 
 const Error = () => {
   return (

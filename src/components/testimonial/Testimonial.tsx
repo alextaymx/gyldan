@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+'use client';
+import Image, { StaticImageData } from 'next/image';
+import React from 'react';
+import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import avatar_img from "@/assets/img/avatar_1.jpg";
-import testimonial_thumb from "@/assets/img/testimonial_thumb_1.jpg";
-import Image, { StaticImageData } from "next/image";
+import avatar_img from '@/assets/img/avatar_1.jpg';
+import testimonial_thumb from '@/assets/img/testimonial_thumb_1.jpg';
 
 interface DataType {
   img: StaticImageData;
@@ -38,11 +38,7 @@ const testimonial_data: DataType[] = [
 const Testimonial = ({ style_service }: any) => {
   return (
     <>
-      <section
-        className={`${
-          style_service ? "cs_shape_wrap_3" : "cs_primary_bg cs_shape_wrap_2"
-        }`}
-      >
+      <section className={`${style_service ? `cs_shape_wrap_3` : `cs_primary_bg cs_shape_wrap_2`}`}>
         {style_service ? null : (
           <>
             <div className="cs_shape_1">
@@ -69,30 +65,9 @@ const Testimonial = ({ style_service }: any) => {
                   stroke="#454545"
                   strokeWidth="2"
                 />
-                <circle
-                  opacity="0.3"
-                  cx="453"
-                  cy="570"
-                  r="424"
-                  stroke="#454545"
-                  strokeWidth="2"
-                />
-                <circle
-                  opacity="0.3"
-                  cx="396"
-                  cy="591"
-                  r="377"
-                  stroke="#454545"
-                  strokeWidth="2"
-                />
-                <circle
-                  opacity="0.3"
-                  cx="330"
-                  cy="630"
-                  r="329"
-                  stroke="#454545"
-                  strokeWidth="2"
-                />
+                <circle opacity="0.3" cx="453" cy="570" r="424" stroke="#454545" strokeWidth="2" />
+                <circle opacity="0.3" cx="396" cy="591" r="377" stroke="#454545" strokeWidth="2" />
+                <circle opacity="0.3" cx="330" cy="630" r="329" stroke="#454545" strokeWidth="2" />
               </svg>
             </div>
 
@@ -130,19 +105,17 @@ const Testimonial = ({ style_service }: any) => {
             <div className="col-lg-7 offset-lg-1">
               <div
                 className={`cs_testimonial ${
-                  style_service ? "cs_style_2" : "cs_style_1 cs_color_1"
+                  style_service ? `cs_style_2` : `cs_style_1 cs_color_1`
                 }`}
               >
-                <h2 className="cs_testimonial_title">
-                  Some Of Our Clients Says
-                </h2>
+                <h2 className="cs_testimonial_title">Some Of Our Clients Says</h2>
                 <Swiper
                   loop={true}
                   speed={1000}
                   autoplay={true}
                   modules={[Autoplay]}
                   pagination={{
-                    el: ".cs_pagination",
+                    el: `.cs_pagination`,
                     clickable: true,
                   }}
                   className="cs_slider cs_slider_4"
@@ -168,20 +141,14 @@ const Testimonial = ({ style_service }: any) => {
                             />
                           </svg>
                         </div>
-                        <blockquote className="cs_testimonial_text">
-                          {item.des}
-                        </blockquote>
+                        <blockquote className="cs_testimonial_text">{item.des}</blockquote>
                         <div className="cs_testimonial_meta">
                           <div className="cs_testimonial_avatar">
                             <Image src={item.img} alt="Avatar" />
                           </div>
                           <div className="cs_testimonial_meta_right">
-                            <h3 className="cs_testimonial_avatar_name">
-                              {item.name}
-                            </h3>
-                            <div className="cs_testimonial_avatar_designation">
-                              {item.location}
-                            </div>
+                            <h3 className="cs_testimonial_avatar_name">{item.name}</h3>
+                            <div className="cs_testimonial_avatar_designation">{item.location}</div>
                           </div>
                         </div>
                       </div>
@@ -194,13 +161,9 @@ const Testimonial = ({ style_service }: any) => {
             </div>
           </div>
         </div>
-        {style_service ? null : (
-          <div className="cs_height_150 cs_height_lg_60"></div>
-        )}
+        {style_service ? null : <div className="cs_height_150 cs_height_lg_60"></div>}
       </section>
-      {style_service ? null : (
-        <div className="cs_height_115 cs_height_lg_60"></div>
-      )}
+      {style_service ? null : <div className="cs_height_115 cs_height_lg_60"></div>}
     </>
   );
 };

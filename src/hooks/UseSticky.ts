@@ -1,5 +1,5 @@
-'use client'
-import { useEffect, useState } from "react";
+'use client';
+import { useEffect, useState } from 'react';
 
 interface StickyState {
   sticky: boolean;
@@ -17,10 +17,10 @@ const UseSticky = (): StickyState => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", stickyHeader);
+    window.addEventListener(`scroll`, stickyHeader);
 
     return (): void => {
-      window.removeEventListener("scroll", stickyHeader);
+      window.removeEventListener(`scroll`, stickyHeader);
     };
   }, []);
 

@@ -1,5 +1,6 @@
-import React from "react";
-import Count from "../common/Count";
+import React from 'react';
+
+import Count from '../common/Count';
 
 interface DataType {
   id: number;
@@ -41,7 +42,7 @@ const FunFactHomeOne = ({ style_2, style_3 }: any) => {
               <div className="cs_funfact cs_style1">
                 <div
                   className={`cs_funfact_number  me-4 ${
-                    style_2 ? "cs_stroke_normal" : "cs_stroke_text"
+                    style_2 ? `cs_stroke_normal` : `cs_stroke_text`
                   }`}
                 >
                   <div className="amin_auto_count">
@@ -50,11 +51,7 @@ const FunFactHomeOne = ({ style_2, style_3 }: any) => {
                   {/* {i === 0 && <span>K</span>}
                   {i === 1 && <span>K</span>} */}
                 </div>
-                <div
-                  className={`cs_funfact_text cs_primary_font ${
-                    style_2 ? "cs_color_1" : ""
-                  }`}
-                >
+                <div className={`cs_funfact_text cs_primary_font ${style_2 ? `cs_color_1` : ``}`}>
                   <p>{item.title}</p>
                 </div>
               </div>

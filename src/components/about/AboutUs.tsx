@@ -1,5 +1,5 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 const AboutUs = ({ style_2 }: any) => {
   return (
@@ -10,7 +10,7 @@ const AboutUs = ({ style_2 }: any) => {
         <div
           className="cs_bg cs_bg_img_about_titile"
           style={{
-            backgroundImage: "url(/assets/img/about_projec_ttitie_bg.jpg)",
+            backgroundImage: `url(/assets/img/about_projec_ttitie_bg.jpg)`,
           }}
         >
           <div className="container">
@@ -22,10 +22,7 @@ const AboutUs = ({ style_2 }: any) => {
                   </h3>
                 </div>
                 <div className="cs_section_heading_right cs_btn_anim">
-                  <Link
-                    href="/contact"
-                    className="cs_btn cs_style_1 cs_color_2"
-                  >
+                  <Link href="/contact" className="cs_btn cs_style_1 cs_color_2">
                     <span>Contact US</span>
                     <svg
                       width="19"

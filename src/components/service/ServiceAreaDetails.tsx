@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface DataType {
   id: string;
@@ -7,23 +7,23 @@ interface DataType {
 }
 const service_data: DataType[] = [
   {
-    id: "one",
-    title: "Understand",
+    id: `one`,
+    title: `Understand`,
     description: `Welcome to our digital agency We specialize in helping your business most`,
   },
   {
-    id: "Two",
-    title: "Design",
+    id: `Two`,
+    title: `Design`,
     description: `Welcome to our digital agency We specialize in helping your business most`,
   },
   {
-    id: "Three",
-    title: "Development",
+    id: `Three`,
+    title: `Development`,
     description: `Welcome to our digital agency We specialize in helping your business most`,
   },
   {
-    id: "Four",
-    title: "Testing",
+    id: `Four`,
+    title: `Testing`,
     description: `Welcome to our digital agency We specialize in helping your business most`,
   },
 ];
@@ -35,14 +35,11 @@ const ServiceAreaDetails = () => {
       <section>
         <div className="container">
           <div className="cs_work cs_work_text">
-            <h4 className="anim_heading_title">
-              Specialization & Working Process
-            </h4>
+            <h4 className="anim_heading_title">Specialization & Working Process</h4>
             <p className="cs_mp0 anim_text">
-              Welcome to our digital agency! We specialize in helping businesses
-              like yours succeed online. From website design and development to
-              digital marketing and advertising, we have the tools and expertise
-              to elevate your online presence.
+              Welcome to our digital agency! We specialize in helping businesses like yours succeed
+              online. From website design and development to digital marketing and advertising, we
+              have the tools and expertise to elevate your online presence.
             </p>
           </div>
           <div className="cs_height_80 cs_height_lg_40"></div>
@@ -50,10 +47,7 @@ const ServiceAreaDetails = () => {
             <div className="cs_work cs_work_1">
               <div className="cs_card_work cs_style_1">
                 {service_data.map((item, i) => (
-                  <div
-                    key={i}
-                    className="cs_card cs_mt_nthchild_0 anim_div_ShowLeftSide"
-                  >
+                  <div key={i} className="cs_card cs_mt_nthchild_0 anim_div_ShowLeftSide">
                     <div className="cs_card cs_style_1">
                       <div className="cs_posagation">
                         <div className="cs_work_style_1"></div>

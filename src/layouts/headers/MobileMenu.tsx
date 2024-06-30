@@ -1,20 +1,18 @@
-"use client";
+'use client';
 
-import { menuData } from "@/data/menu_data";
-import Link from "next/link";
+import Link from 'next/link';
+
+import { menuData } from '@/data/menu_data';
 
 const MobileMenu = ({ active, navTitle, openMobileMenu }: any) => {
   return (
     <>
-      <ul
-        className="cs_nav_list"
-        style={{ display: active ? "block" : "none" }}
-      >
+      <ul className="cs_nav_list" style={{ display: active ? `block` : `none` }}>
         {menuData.map((menu) => (
           <li
             key={menu.id}
-            className={`${menu.has_dropdown ? "menu-item-has-children" : ""} ${
-              navTitle === menu.title ? "active" : ""
+            className={`${menu.has_dropdown ? `menu-item-has-children` : ``} ${
+              navTitle === menu.title ? `active` : ``
             }`}
           >
             <Link href={menu.link}>{menu.title}</Link>
@@ -23,7 +21,7 @@ const MobileMenu = ({ active, navTitle, openMobileMenu }: any) => {
                 <ul
                   className="cs_mega_wrapper"
                   style={{
-                    display: navTitle === menu.title ? "block" : "none",
+                    display: navTitle === menu.title ? `block` : `none`,
                   }}
                 >
                   {menu.sub_menu?.map((subMenu) => (
@@ -34,9 +32,7 @@ const MobileMenu = ({ active, navTitle, openMobileMenu }: any) => {
                 </ul>
                 <span
                   onClick={() => openMobileMenu(menu.title)}
-                  className={`cs_munu_dropdown_toggle ${
-                    navTitle === menu.title ? "active" : ""
-                  }`}
+                  className={`cs_munu_dropdown_toggle ${navTitle === menu.title ? `active` : ``}`}
                 ></span>
               </>
             )}

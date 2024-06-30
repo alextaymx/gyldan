@@ -46,10 +46,10 @@
 /*--------------------------------------------------------------
 1. Basic Color Variable
 ----------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;900&family=Kanit:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;900&family=Kanit:wght@400;500;600;700&display=swap');
 :root {
-  --body-font-family: "Kanit", sans-serif;
-  --heading-font-family: "Inter Tight", sans-serif;
+  --body-font-family: 'Kanit', sans-serif;
+  --heading-font-family: 'Inter Tight', sans-serif;
   --accent-color: #ff6b00;
   --body-color: #454545;
   --heading-color: #101010;
@@ -99,11 +99,11 @@ h6 {
   font-weight: 700;
   line-height: 1.2em;
   color: var(--heading-color);
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 .cs_primary_font {
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 .cs_secondary_font {
@@ -287,7 +287,7 @@ textarea {
 }
 .cs_preloader .loading {
   font-size: 90px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   text-align: center;
 }
@@ -974,7 +974,7 @@ hr {
   position: relative;
 }
 .cs_text_btn span::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 0px;
   width: 100%;
@@ -1018,7 +1018,7 @@ hr {
   color: var(--heading-color);
 }
 .cs_btn.cs_style_1::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 65px;
   width: 65px;
@@ -1107,7 +1107,7 @@ hr {
   padding-right: 21px;
 }
 .cs_page_navigation > div:not(:last-child)::after {
-  content: "";
+  content: '';
   height: 22px;
   width: 2px;
   background-color: #fff;
@@ -1172,7 +1172,7 @@ label {
   padding-right: 12px;
 }
 .cs_post_meta.cs_style1 > *:not(:last-child)::before {
-  content: "";
+  content: '';
   height: 20px;
   width: 2px;
   border-radius: 2px;
@@ -1183,7 +1183,7 @@ label {
   margin-top: -10px;
 }
 
-.cs_parallax > *:not([class*=cs_shape_]) {
+.cs_parallax > *:not([class*='cs_shape_']) {
   position: relative;
   z-index: 5;
 }
@@ -1565,7 +1565,7 @@ label {
   position: relative;
 }
 .cs_video_block_1_wrap::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 50%;
   width: 100%;
@@ -1583,7 +1583,7 @@ label {
   border-radius: 0px;
 }
 .cs_video_block.cs_style1::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1618,7 +1618,7 @@ label {
 
 .cs_player_btn:before,
 .cs_player_btn:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1674,7 +1674,7 @@ label {
   padding-left: 29px;
 }
 .cs_section_heading.cs_style_1 .cs_section_subtitle::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 14px;
   width: 14px;
@@ -1761,7 +1761,8 @@ label {
 }
 
 @keyframes particalAnimation {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0px, 0px);
   }
   20% {
@@ -1820,16 +1821,16 @@ label {
     transform: translateY(-48px) rotate(-75deg);
   }
 }
-[class*=cs_shape_wrap_] {
+[class*='cs_shape_wrap_'] {
   position: relative;
   overflow: hidden;
 }
 
-[class*=cs_shape_wrap_] [class*=cs_shape_] {
+[class*='cs_shape_wrap_'] [class*='cs_shape_'] {
   position: absolute;
 }
 
-.cs_shape_wrap_1 > *:not([class*=cs_shape_]) {
+.cs_shape_wrap_1 > *:not([class*='cs_shape_']) {
   position: relative;
   z-index: 10;
 }
@@ -1844,7 +1845,7 @@ label {
   animation: animo-x 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-.cs_shape_wrap_2 > *:not([class*=cs_shape_]) {
+.cs_shape_wrap_2 > *:not([class*='cs_shape_']) {
   position: relative;
   z-index: 10;
 }
@@ -1859,7 +1860,7 @@ label {
   animation: animo-y 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-.cs_shape_wrap_3 > *:not([class*=cs_shape_]) {
+.cs_shape_wrap_3 > *:not([class*='cs_shape_']) {
   position: relative;
   z-index: 10;
 }
@@ -1895,7 +1896,7 @@ label {
   position: relative;
 }
 .cs_page_heading.cs_style1::after {
-  content: "";
+  content: '';
   position: absolute;
   right: -30px;
   top: -30px;
@@ -1929,7 +1930,7 @@ label {
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-  content: "";
+  content: '';
   height: 17px;
   width: 1px;
   background-color: #fff;
@@ -1952,7 +1953,7 @@ label {
   border-radius: 15px;
 }
 .cs_image_layer.cs_style1 .cs_image_layer_in::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 100%;
   width: 100%;
@@ -2019,7 +2020,7 @@ label {
   overflow: hidden;
 }
 .cs_shine_hover_1::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -80%;
@@ -2136,7 +2137,7 @@ label {
   position: relative;
 }
 .cs_case_study .cs_case_study_title a span::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 7px;
   width: 0%;
@@ -2173,7 +2174,9 @@ label {
 }
 
 .cs_parallax_slider {
-  transition: opacity 0.6s ease, transform 0.3s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.3s ease;
 }
 .cs_parallax_slider.loading {
   opacity: 0;
@@ -2226,7 +2229,7 @@ label {
 }
 .cs_field_group .cs_input_field:focus {
   -o-border-image: linear-gradient(to right, #b42f2f, #141414);
-     border-image: linear-gradient(to right, #b42f2f, #141414);
+  border-image: linear-gradient(to right, #b42f2f, #141414);
   border-image-slice: 1;
 }
 .cs_field_group .cs_input_field:focus ~ .cs_input_label {
@@ -2258,7 +2261,7 @@ label {
 }
 
 .cs_hr_design {
-  content: "";
+  content: '';
   width: 100%;
   border-top: 2px solid #d9d9d9;
 }
@@ -2554,7 +2557,7 @@ label {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transform-origin: left;
 }
 
@@ -2701,7 +2704,7 @@ label {
   opacity: 1;
 }
 .cs_pagination.cs_style1 .swiper-pagination-bullet::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 5px;
   width: 5px;
@@ -2878,7 +2881,7 @@ label {
 }
 
 .cs_video_popup_content:after {
-  content: "";
+  content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -2909,7 +2912,7 @@ label {
 
 .embed-responsive-16by9::before {
   display: block;
-  content: "";
+  content: '';
   padding-top: 56.25%;
 }
 
@@ -2942,7 +2945,7 @@ label {
 }
 
 .cs_video_popup_close:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 50%;
@@ -2956,7 +2959,7 @@ label {
 }
 
 .cs_video_popup_close:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 50%;
@@ -3240,8 +3243,9 @@ label {
   z-index: 2;
   z-index: 100;
 }
-.cs_close::before, .cs_close::after {
-  content: "";
+.cs_close::before,
+.cs_close::after {
+  content: '';
   position: absolute;
   width: 50%;
   height: 2px;
@@ -3298,8 +3302,11 @@ label {
 .cs_gescout_show.cs_color_1 .cs_nav_list.cs_color_1 .menu-item-has-children.cs_changes_color_1 > a {
   position: relative;
 }
-.cs_gescout_show.cs_color_1 .cs_nav_list.cs_color_1 .menu-item-has-children.cs_changes_color_1 > a::after {
-  content: "";
+.cs_gescout_show.cs_color_1
+  .cs_nav_list.cs_color_1
+  .menu-item-has-children.cs_changes_color_1
+  > a::after {
+  content: '';
   display: inline-block;
   height: 8px;
   width: 8px;
@@ -3399,7 +3406,7 @@ label {
     position: relative;
   }
   .cs_nav .cs_nav_list > li.menu-item-has-children > a::after {
-    content: "";
+    content: '';
     display: inline-block;
     height: 8px;
     width: 8px;
@@ -3416,7 +3423,7 @@ label {
     position: relative;
   }
   .cs_nav .cs_nav_list > li.menu-item-has-children.cs_changes_color_1 > a::after {
-    content: "";
+    content: '';
     display: inline-block;
     height: 8px;
     width: 8px;
@@ -3510,8 +3517,9 @@ label {
     right: 20px;
     top: 9px;
   }
-  .cs_munu_dropdown_toggle_1:before, .cs_munu_dropdown_toggle_1:after {
-    content: "";
+  .cs_munu_dropdown_toggle_1:before,
+  .cs_munu_dropdown_toggle_1:after {
+    content: '';
     display: block;
     position: absolute;
     left: 50%;
@@ -3593,8 +3601,9 @@ label {
     right: 20px;
     top: 5px;
   }
-  .cs_munu_dropdown_toggle:before, .cs_munu_dropdown_toggle:after {
-    content: "";
+  .cs_munu_dropdown_toggle:before,
+  .cs_munu_dropdown_toggle:after {
+    content: '';
     display: block;
     position: absolute;
     left: 50%;
@@ -3662,7 +3671,7 @@ label {
     transition-delay: 0.2s;
   }
   .cs_munu_toggle span:before {
-    content: "";
+    content: '';
     position: absolute;
     margin-top: -9px;
     transition-property: margin, transform;
@@ -3670,7 +3679,7 @@ label {
     transition-delay: 0.2s, 0s;
   }
   .cs_munu_toggle span:after {
-    content: "";
+    content: '';
     position: absolute;
     margin-top: 9px;
     transition-property: margin, transform;
@@ -4126,7 +4135,7 @@ label {
 }
 .widget_archive ul li::before,
 .widget_categories ul li::before {
-  content: "";
+  content: '';
   width: 14px;
   height: 12px;
   /* background: url("../img/icons/double_arrow_icon.svg"); */
@@ -4468,13 +4477,21 @@ label {
   font-weight: 900;
   order: 1;
 }
-.cs_hero.cs_style5 .cs_marketing_agency_section.cs_style_1 .cs_text_btn .cs_banner_text.cs_text_size {
+.cs_hero.cs_style5
+  .cs_marketing_agency_section.cs_style_1
+  .cs_text_btn
+  .cs_banner_text.cs_text_size {
   font-size: 216px;
 }
 .cs_hero.cs_style5 .cs_marketing_agency_section.cs_style_1 .cs_text_btn .cs_img {
   order: 2;
 }
-.cs_hero.cs_style5 .cs_marketing_agency_section.cs_style_1 .cs_text_btn .cs_hero_btn_wrap .cs_round_btn_wrap .cs_hero_btn {
+.cs_hero.cs_style5
+  .cs_marketing_agency_section.cs_style_1
+  .cs_text_btn
+  .cs_hero_btn_wrap
+  .cs_round_btn_wrap
+  .cs_hero_btn {
   min-width: 144px;
   height: 144px;
 }
@@ -4545,7 +4562,7 @@ label {
 
 .swiper-slide .cs_hero.cs_style1 .cs_hero_mini_title {
   -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
+  clip-path: inset(0 100% 0 0);
   transition: all 0.65s ease;
 }
 .swiper-slide .cs_hero.cs_style1 .cs_hero_title,
@@ -4565,7 +4582,7 @@ label {
 }
 .swiper-slide.swiper-slide-active .cs_hero.cs_style1 .cs_hero_mini_title {
   -webkit-clip-path: inset(0 0% 0 0);
-          clip-path: inset(0 0% 0 0);
+  clip-path: inset(0 0% 0 0);
   transition-delay: 0.75s;
 }
 .swiper-slide.swiper-slide-active .cs_hero.cs_style1 .cs_hero_title,
@@ -4664,7 +4681,10 @@ label {
   .cs_hero.cs_style5 .cs_marketing_agency_section.cs_style_1 .cs_text_img .cs_img {
     max-width: 40%;
   }
-  .cs_hero.cs_style5 .cs_marketing_agency_section.cs_style_1 .cs_text_btn .cs_banner_text.cs_text_size {
+  .cs_hero.cs_style5
+    .cs_marketing_agency_section.cs_style_1
+    .cs_text_btn
+    .cs_banner_text.cs_text_size {
     font-size: 90px;
   }
   .cs_hero.cs_style5 .cs_marketing_agency_section.cs_style_1 .cs_subtext {
@@ -4728,7 +4748,10 @@ label {
   .cs_hero.cs_style5 .cs_marketing_agency_section.cs_style_1 .cs_text_btn .cs_banner_text {
     font-size: 20px;
   }
-  .cs_hero.cs_style5 .cs_marketing_agency_section.cs_style_1 .cs_text_btn .cs_banner_text.cs_text_size {
+  .cs_hero.cs_style5
+    .cs_marketing_agency_section.cs_style_1
+    .cs_text_btn
+    .cs_banner_text.cs_text_size {
     font-size: 56px;
   }
 }
@@ -4844,10 +4867,10 @@ label {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: relative;
   -webkit-clip-path: inset(0 100% 0 0);
-          clip-path: inset(0 100% 0 0);
+  clip-path: inset(0 100% 0 0);
   animation: inactiveImageAnimation1 0.6s forwards ease;
 }
 .cs_iconbox_3_list .cs_hover_tab.active .cs_image_layer img {
@@ -4902,21 +4925,21 @@ label {
 @keyframes inactiveImageAnimation1 {
   0% {
     -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
   }
   100% {
     -webkit-clip-path: inset(0 100% 0 0);
-            clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% 0 0);
   }
 }
 @keyframes activeImageAnimation1 {
   0% {
     -webkit-clip-path: inset(0 0 0 100%);
-            clip-path: inset(0 0 0 100%);
+    clip-path: inset(0 0 0 100%);
   }
   100% {
     -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
   }
 }
 @media screen and (max-width: 1199px) {
@@ -5118,7 +5141,7 @@ label {
   margin-bottom: 50px;
 }
 .cs_card_2_list .cs_card.cs_style_2:not(:last-child)::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 1px;
   width: calc(100% - 180px);
@@ -5291,7 +5314,7 @@ label {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background-position: center;
   transition: all 0.5s ease;
   z-index: -100;
@@ -5350,7 +5373,7 @@ label {
 }
 .cs_team_details .cs_funfact.cs_style1 .cs_stroke_text {
   font-size: 60px;
-  font-family: "Inter Tight";
+  font-family: 'Inter Tight';
 }
 .cs_team_details.cs_funfact {
   display: flex;
@@ -5426,16 +5449,25 @@ label {
   text-transform: capitalize;
   padding: 150px 250px;
 }
-.cs_learning_project .cs_section_heading.cs_style_1 .cs_section_heading_text .cs_section_title_3.cs_color_2 {
+.cs_learning_project
+  .cs_section_heading.cs_style_1
+  .cs_section_heading_text
+  .cs_section_title_3.cs_color_2 {
   color: #fff;
 }
 .cs_learning_project .cs_section_heading.cs_style_1 .cs_section_heading_right {
   margin-top: 70px;
 }
-.cs_learning_project .cs_section_heading.cs_style_1 .cs_section_heading_right .cs_btn.cs_style_1.cs_color_1 {
+.cs_learning_project
+  .cs_section_heading.cs_style_1
+  .cs_section_heading_right
+  .cs_btn.cs_style_1.cs_color_1 {
   color: #000;
 }
-.cs_learning_project .cs_section_heading.cs_style_1 .cs_section_heading_right .cs_btn.cs_style_1.cs_color_2 {
+.cs_learning_project
+  .cs_section_heading.cs_style_1
+  .cs_section_heading_right
+  .cs_btn.cs_style_1.cs_color_2 {
   color: #fff;
 }
 
@@ -5958,7 +5990,7 @@ label {
   padding-left: 27px;
 }
 .cs_funfact.cs_style1 .cs_funfact_text::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 54px;
   width: 54px;
@@ -5969,7 +6001,7 @@ label {
   background-color: var(--accent-color);
 }
 .cs_funfact.cs_style1 .cs_funfact_text.cs_color_1::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 54px;
   width: 54px;
@@ -5996,7 +6028,7 @@ label {
   padding: 0 45px;
 }
 .cs_pricing_table.cs_style1::before {
-  content: "";
+  content: '';
   position: absolute;
   right: -55px;
   top: -55px;
@@ -6099,7 +6131,7 @@ label {
 }
 
 .cs_our_agency_Par_color {
-  font-family: "Kanit";
+  font-family: 'Kanit';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -6307,7 +6339,7 @@ label {
 .cs_startup_agency {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   margin-top: 30px;
 }
 .cs_startup_agency.cs_card {
@@ -6353,27 +6385,51 @@ label {
 .cs_creative_protfolio.cs_card_style_change .cs_card.cs_style_1.cs_color_1 .cs_card_right {
   padding: 0;
 }
-.cs_creative_protfolio.cs_card_style_change .cs_card.cs_style_1.cs_color_1 .cs_card_right .cs_card_right_in .cs_card_title {
+.cs_creative_protfolio.cs_card_style_change
+  .cs_card.cs_style_1.cs_color_1
+  .cs_card_right
+  .cs_card_right_in
+  .cs_card_title {
   color: var(--common-color-black);
   margin: 0px;
 }
-.cs_creative_protfolio.cs_card_style_change .cs_card.cs_style_1.cs_color_1 .cs_card_right .cs_card_right_in .cs_card_title a > span {
+.cs_creative_protfolio.cs_card_style_change
+  .cs_card.cs_style_1.cs_color_1
+  .cs_card_right
+  .cs_card_right_in
+  .cs_card_title
+  a
+  > span {
   font-size: 16px;
 }
-.cs_creative_protfolio.cs_card_style_change .cs_card.cs_style_1.cs_color_1:hover > .cs_card_link_wrap .cs_card_link {
+.cs_creative_protfolio.cs_card_style_change
+  .cs_card.cs_style_1.cs_color_1:hover
+  > .cs_card_link_wrap
+  .cs_card_link {
   color: #ff6b00;
   transform: rotate(0deg);
 }
-.cs_creative_protfolio.cs_card_style_change .cs_card.cs_style_1.cs_color_1:hover > .cs_card_link_wrap .cs_card_link span:first-child {
+.cs_creative_protfolio.cs_card_style_change
+  .cs_card.cs_style_1.cs_color_1:hover
+  > .cs_card_link_wrap
+  .cs_card_link
+  span:first-child {
   transform: translate(50px, -50px);
 }
-.cs_creative_protfolio.cs_card_style_change .cs_card.cs_style_1.cs_color_1:hover > .cs_card_link_wrap .cs_card_link span:last-child {
+.cs_creative_protfolio.cs_card_style_change
+  .cs_card.cs_style_1.cs_color_1:hover
+  > .cs_card_link_wrap
+  .cs_card_link
+  span:last-child {
   transform: translate(50px, -50px) scale(1);
 }
 .cs_creative_protfolio.cs_card_style_change .cs_card.cs_style_1.cs_color_1 .cs_card_link_wrap {
   color: var(--common-color-black);
 }
-.cs_creative_protfolio.cs_card_style_change .cs_card.cs_style_1.cs_color_1 .cs_card_link_wrap .cs_card_link {
+.cs_creative_protfolio.cs_card_style_change
+  .cs_card.cs_style_1.cs_color_1
+  .cs_card_link_wrap
+  .cs_card_link {
   transform: rotate(45deg);
 }
 .cs_creative_protfolio.cs_card_style_change .cs_hr_design {
@@ -6405,7 +6461,10 @@ label {
   width: 100%;
   height: 100%;
 }
-.cs_service_exploring .cs_service_exploring_2 .cs_service_exploring_img .cs_service_exploring_img_text {
+.cs_service_exploring
+  .cs_service_exploring_2
+  .cs_service_exploring_img
+  .cs_service_exploring_img_text {
   position: absolute;
   bottom: 0px;
   margin-left: -150px;
@@ -6414,10 +6473,17 @@ label {
   padding: 45px;
   background-color: #101010;
 }
-.cs_service_exploring .cs_service_exploring_2 .cs_service_exploring_img .cs_service_exploring_img_text img {
+.cs_service_exploring
+  .cs_service_exploring_2
+  .cs_service_exploring_img
+  .cs_service_exploring_img_text
+  img {
   margin-bottom: 20px;
 }
-.cs_service_exploring .cs_service_exploring_2 .cs_service_exploring_img .cs_service_exploring_img_text.cs_color_1 {
+.cs_service_exploring
+  .cs_service_exploring_2
+  .cs_service_exploring_img
+  .cs_service_exploring_img_text.cs_color_1 {
   color: #c1c1c1;
 }
 
@@ -6452,7 +6518,10 @@ label {
     height: 500px;
     overflow: hidden;
   }
-  .cs_service_exploring .cs_service_exploring_2 .cs_service_exploring_img .cs_service_exploring_img_text {
+  .cs_service_exploring
+    .cs_service_exploring_2
+    .cs_service_exploring_img
+    .cs_service_exploring_img_text {
     width: 100%;
     margin-left: 0px;
     margin-bottom: 0px;
@@ -6684,4 +6753,4 @@ label {
   .cs_icon {
     margin-top: 0px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

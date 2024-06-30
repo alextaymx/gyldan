@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 const title = `Enhancing Brands with Creative Excellence`;
 
 const MarqueeAreaHomeThree = () => {
@@ -8,14 +8,12 @@ const MarqueeAreaHomeThree = () => {
         <div className="cs_moving_section_in">
           <h4 className="cs_moving_section mb-0 cs_white_color">
             {title}&nbsp;
-            <span className="cs_accent_color">&bull; {title} &bull;</span>{" "}
-            &nbsp; {title}
+            <span className="cs_accent_color">&bull; {title} &bull;</span> &nbsp; {title}
             <span className="cs_accent_color">&bull; {title} &bull;</span>
           </h4>
           <h4 className="cs_moving_section mb-0 cs_white_color">
             {title}&nbsp;
-            <span className="cs_accent_color">&bull; {title} &bull;</span>{" "}
-            &nbsp; {title}
+            <span className="cs_accent_color">&bull; {title} &bull;</span> &nbsp; {title}
             <span className="cs_accent_color">&bull; {title} &bull;</span>
           </h4>
         </div>

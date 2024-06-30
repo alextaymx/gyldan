@@ -1,15 +1,15 @@
-'use client'
+'use client';
 
-import ContactArea from '@/components/contact/ContactArea';
-import Wrapper from '@/layouts/Wrapper';
-import FooterOne from '@/layouts/footers/FooterOne';
-import HeaderOne from '@/layouts/headers/HeaderOne';
 import React from 'react';
 
-// export const metadata = {
-//   title: "Contact Vixan - Digital  Creative Agency Next js Template",  
-// };
+import ContactArea from '@/components/contact/ContactArea';
+import FooterOne from '@/layouts/footers/FooterOne';
+import HeaderOne from '@/layouts/headers/HeaderOne';
+import Wrapper from '@/layouts/Wrapper';
 
+// export const metadata = {
+//   title: "Contact Vixan - Digital  Creative Agency Next js Template",
+// };
 
 const index = () => {
   return (
@@ -18,10 +18,10 @@ const index = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-        <ContactArea />
-        </main>
-        <FooterOne />
-      </div>
+            <ContactArea />
+          </main>
+          <FooterOne />
+        </div>
       </div>
     </Wrapper>
   );

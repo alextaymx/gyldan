@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 interface DataType {
   faq_data: {
@@ -15,37 +15,37 @@ interface DataType {
 const service_faq_content: DataType = {
   faq_data: [
     {
-      id: "One",
+      id: `One`,
       question: `Company Formation & Secretarial Services`,
       answer: `In the face of increasingly intricate regulatory demands and rapid technological advancements, your organization must navigate regulatory obligations efficiently while remaining agile to seize growth opportunities. Our team is dedicated to managing your corporate secretarial matters in a cost-effective and risk-mitigated manner tailored to your specific business model. Streamlining the incorporation process, we make establishing your company seamless and stress-free. With our esteemed partners, we extend support to both local and international business owners, facilitating the legal establishment and operation of companies in Malaysia and Singapore. We offer a comprehensive range of support and advisory services to ensure ongoing compliance with relevant legislative and statutory requirements.`,
     },
     {
-      id: "Two",
+      id: `Two`,
       question: `Accounting`,
       answer: `We take pride in delivering professional accounting services that enable individuals and businesses to efficiently manage their financial records. Our dedicated team of experienced accountants ensures the provision of precise and dependable financial information, guaranteeing compliance with all relevant regulations and standards. Whether you require support with bookkeeping, tax preparation, or financial analysis, our expertise is tailored to meet your specific needs. Our comprehensive accounting solutions allow you to concentrate on business growth while we handle the intricacies of financial management. Count on us to manage your financial affairs with utmost confidentiality and integrity. Our objective is to empower you with the knowledge and insights essential for making well-informed financial decisions. Connect with us today to explore how we can seamlessly address your accounting requirements.`,
     },
     {
-      id: "Three",
+      id: `Three`,
       question: `Tax Advisory`,
       answer: `Our tax advisory services are crafted to guide individuals and businesses through the intricacies of tax laws and regulations. Delivering personalized counsel and strategic insights, we aim to help clients minimize tax liabilities and optimize financial opportunities. Our seasoned team of tax professionals remains abreast of the latest legislative changes, employing their expertise to tailor solutions to individual tax situations. Whether it's tax planning, compliance, or resolution of tax disputes, our adept advisors are ready to assist. Recognizing the challenges taxes pose, our comprehensive tax advisory service ensures that your tax matters are managed with precision and efficiency, providing confidence in every aspect of the process.`,
     },
     {
-      id: "Four",
+      id: `Four`,
       question: `Business Development`,
       answer: `Our services in business development center on diverse facets of organizational enhancement and effectiveness. We excel in aiding businesses to establish a robust organizational framework that fosters efficient communication and collaboration. Our support extends to the creation of well-defined departments and committees, aligning roles and responsibilities with overarching business objectives. Moreover, we provide guidance in crafting Standard Operating Procedures (SOPs) to streamline processes and elevate productivity. Leveraging our expertise in these realms, we empower businesses to optimize operations and attain sustainable growth.`,
     },
     {
-      id: "Five",
+      id: `Five`,
       question: `HR & Payroll Management`,
       answer: `We provide tailored HR and payroll management solutions designed to meet the distinct requirements of our clients. Backed by a proficient team, we ensure the efficient and precise handling of all HR and payroll aspects. From seamless employee onboarding and benefits administration to meticulous payroll processing and tax compliance, our services span the entire spectrum. Leveraging cutting-edge technology, our state-of-the-art systems facilitate seamless integration and automation, reducing both time investment and errors. Recognizing the significance of confidentiality and security in managing sensitive employee data, we enforce stringent protocols. With our HR and payroll management services, businesses can streamline their focus on core operations, confident that their HR and payroll needs are expertly handled.`,
     },
     {
-      id: "Six",
+      id: `Six`,
       question: `Virtual Administration`,
       answer: `Our team of proficient experts is committed to remotely supporting businesses in their administrative functions. Whether it's overseeing emails, coordinating appointments, organizing files, managing data entry, or conducting research, we offer comprehensive assistance for all administrative requirements. Through our virtual administration services, clients can optimize their time and resources by outsourcing these tasks to our efficient team. We prioritize confidentiality, accuracy, and prompt service delivery, enabling businesses to concentrate on core operations while entrusting administrative responsibilities to us. Count on us to enhance efficiency, streamline administrative processes, and elevate overall productivity.`,
     },
     {
-      id: "Seven",
+      id: `Seven`,
       question: `IT Management & Other Business Systems Integration`,
       answer: `We present a comprehensive array of IT services tailored to fulfill your business requirements. Our team of young, creative and vibrant professionals specializes in crafting visually appealing and functional websites to enhance your online presence. We provide meticulous software maintenance services, ensuring your applications remain up-to-date and operate seamlessly. Proficient in infrastructure and networking, our team guarantees the security and efficiency of your IT systems. Additionally, we offer business systems integration to streamline operations and enhance overall productivity. With our IT services, entrust your technological needs to us, allowing you to concentrate on core business activities.`,
     },
@@ -89,15 +89,10 @@ const CorporateAdvisoryServices = () => {
                 <div
                   key={i}
                   onClick={() => toggleAccordion(i)}
-                  className={`cs_accordion_item ${
-                    i === activeIndex ? "active cs_icon" : ""
-                  }`}
+                  className={`cs_accordion_item ${i === activeIndex ? `active cs_icon` : ``}`}
                 >
                   <div className="cs_accordion_header">
-                    <p
-                      className="cs_accordion_title cs_m0"
-                      id={`heading${item.id}`}
-                    >
+                    <p className="cs_accordion_title cs_m0" id={`heading${item.id}`}>
                       {item.question}
                     </p>
                     <svg
@@ -105,8 +100,7 @@ const CorporateAdvisoryServices = () => {
                       viewBox="0 0 25 25"
                       width="30"
                       style={{
-                        transform:
-                          i === activeIndex ? "rotate(-90deg)" : "none",
+                        transform: i === activeIndex ? `rotate(-90deg)` : `none`,
                       }}
                     >
                       <path
@@ -116,11 +110,7 @@ const CorporateAdvisoryServices = () => {
                     </svg>
                   </div>
 
-                  <div
-                    className={`cs_accordion_body ${
-                      i === activeIndex ? "" : "d-none"
-                    }`}
-                  >
+                  <div className={`cs_accordion_body ${i === activeIndex ? `` : `d-none`}`}>
                     {item.answer}
                   </div>
                 </div>
