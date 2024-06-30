@@ -57,7 +57,7 @@ export const menuData: MenuDataType[] = [
   {
     id: 6,
     title: `Recruitment`,
-    link: `/receuitment`,
+    link: `/recruitment`,
     has_dropdown: false,
   },
   {
