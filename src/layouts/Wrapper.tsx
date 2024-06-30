@@ -23,7 +23,7 @@ const Wrapper = ({ children }: any) => {
 
   return (
     <>
-      <RegisterScrollComponent />
+      {/* <RegisterScrollComponent /> */}
       {children}
       <ScrollToTop />
       {/* <DarkLight /> */}
