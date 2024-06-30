@@ -1,8 +1,9 @@
 import { menuData } from './menu_data';
 
 export const ENVIRONMENT = process.env.NODE_ENV;
-export const isLocal = ENVIRONMENT === `development`;
+export const isLocal = ENVIRONMENT === `test`;
 export const isProduction = ENVIRONMENT === `production`;
+
 export const businessInfo = {
   email: `info@gyldan.com.my`,
   phone: `+603-9547 7151`,

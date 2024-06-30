@@ -24,7 +24,7 @@ import Wrapper from '@/layouts/Wrapper';
 //   title: "Startup Agency - Creative Agency Next js Template",
 // };
 
-const index = () => {
+const Index = () => {
   const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
 
   return (
@@ -62,4 +62,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

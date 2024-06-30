@@ -1,10 +1,9 @@
+import LandlordIntro from '@/app/grandeur-coliving/landlord/LandlordIntro';
+import OffersToLandlord from '@/app/grandeur-coliving/landlord/OffersToLandlord';
 import AboutHomeFour from '@/components/about/AboutHomeFour';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import Wrapper from '@/layouts/Wrapper';
-
-import LandlordIntro from '@/app/grandeur-coliving/landlord/LandlordIntro';
-import ServiceTeam from '@/components/service/ServiceTeam';
 
 type Props = {};
 
@@ -16,7 +15,7 @@ function index({}: Props) {
         <div id="smooth-content">
           <main>
             <LandlordIntro />
-            <ServiceTeam />
+            <OffersToLandlord />
             <AboutHomeFour />
           </main>
           <FooterOne />

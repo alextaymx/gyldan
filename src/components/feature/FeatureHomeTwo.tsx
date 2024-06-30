@@ -110,7 +110,7 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
                 <div className="anim_text">
                   <p className="cs_font_16 cs_secend_section">{des}</p>
                   <div className="cs_service_back_btn">
-                    <a href="#" className="cs_style_1 cs_color_1">
+                    <a href="/" className="cs_style_1 cs_color_1">
                       <span className="cs_font_18">Learn More</span>
                       {` `}
                       <svg

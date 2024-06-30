@@ -1,3 +1,4 @@
+import ColivingRedirect from '@/app/grandeur-coliving/ColivingRedirect';
 import AboutHomeFour from '@/components/about/AboutHomeFour';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
@@ -15,7 +16,7 @@ function index({}: Props) {
         <div id="smooth-content">
           <main>
             <GrandeurIntro />
-
+            <ColivingRedirect />
             <AboutHomeFour />
           </main>
           <FooterOne />

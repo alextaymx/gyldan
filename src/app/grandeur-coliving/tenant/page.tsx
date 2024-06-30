@@ -1,26 +1,21 @@
-'use client';
-
+import OffersToTenant from '@/app/grandeur-coliving/tenant/OffersToTenant';
+import TenantIntro from '@/app/grandeur-coliving/tenant/TenantIntro';
 import AboutHomeFour from '@/components/about/AboutHomeFour';
-import HeroService from '@/components/hero/HeroService';
-import Service from '@/components/service/Service';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import Wrapper from '@/layouts/Wrapper';
 
-// export const metadata = {
-//   title: "Service Vixan - Digital  Creative Agency Next js Template",
-// };
+type Props = {};
 
-const index = () => {
+function Index({}: Props) {
   return (
     <Wrapper>
       <HeaderOne />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <HeroService />
-            <Service />
-            {/* <Testimonial style_service={true} /> */}
+            <TenantIntro />
+            <OffersToTenant />
             <AboutHomeFour />
           </main>
           <FooterOne />
@@ -28,6 +23,6 @@ const index = () => {
       </div>
     </Wrapper>
   );
-};
+}
 
-export default index;
+export default Index;

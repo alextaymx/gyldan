@@ -3,12 +3,14 @@
 import Link from 'next/link';
 
 import { menuData } from '@/data/menu_data';
+import { isLocal } from '@/data/constants';
+const activeMenuData = isLocal ? menuData : menuData.filter((item) => !item.hidden);
 
 const MobileMenu = ({ active, navTitle, openMobileMenu }: any) => {
   return (
     <>
       <ul className="cs_nav_list" style={{ display: active ? `block` : `none` }}>
-        {menuData.map((menu) => (
+        {activeMenuData.map((menu) => (
           <li
             key={menu.id}
             className={`${menu.has_dropdown ? `menu-item-has-children` : ``} ${

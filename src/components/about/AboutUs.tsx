@@ -18,7 +18,7 @@ const AboutUs = ({ style_2 }: any) => {
               <div className="cs_section_heading cs_style_1">
                 <div className="cs_section_heading_text">
                   <h3 className="cs_section_title_3 cs_color_2 anim_heading_title">
-                    We'd be interested in learning more about your project.
+                    We&apos;d be interested in learning more about your project.
                   </h3>
                 </div>
                 <div className="cs_section_heading_right cs_btn_anim">

@@ -4,7 +4,6 @@ import AboutHomeOne from '@/components/about/AboutHomeOne';
 import AboutUs from '@/components/about/AboutUs';
 import BlogHomeOne from '@/components/blog/BlogHomeOne';
 import BrandHomeOne from '@/components/brand/BrandHomeOne';
-import MarqueeAreaHomeOne from '@/components/brand/MarqueeAreaHomeOne';
 import MarqueeAreaHomeThree from '@/components/brand/MarqueeAreaHomeThree';
 import FeatureHomeTwo from '@/components/feature/FeatureHomeTwo';
 import HeroHomeOne from '@/components/hero/HeroHomeOne';

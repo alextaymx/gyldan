@@ -11,5 +11,9 @@
         "allowTrailingCommas": true
       }
     }
-  ]
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.scss": "postcss"
+  }
 }

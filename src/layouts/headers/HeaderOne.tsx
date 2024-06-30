@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 import SITE_LOGO from '@/assets/img/logo/gyldan.png';
-import { businessInfo, socialLinks } from '@/data/constants';
+import { businessInfo, isLocal, socialLinks } from '@/data/constants';
 import { menuData } from '@/data/menu_data';
 import UseSticky from '@/hooks/UseSticky';
 
@@ -12,7 +12,7 @@ import MobileMenu from './MobileMenu';
 
 // import logo from "@/assets/img/logo.svg";
 // import Logo_white from "@/assets/img/Logo_white.png";
-
+const activeMenuData = isLocal ? menuData : menuData.filter((item) => !item.hidden);
 const HeaderOne = () => {
   const { sticky } = UseSticky();
 
@@ -125,7 +125,7 @@ const HeaderOne = () => {
               <div className="cs_box_one">
                 <div className="cs_nav_black_section cs_font_changes">
                   <ul>
-                    {menuData.map((item, i) => (
+                    {activeMenuData.map((item, i) => (
                       <li
                         key={i}
                         className={`menu-item-has-black-section cs_style_1 ${

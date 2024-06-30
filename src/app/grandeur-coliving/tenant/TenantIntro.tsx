@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-import landlord_img from '@/assets/img/coliving/landlord/landlord-img.jpg';
+import tenant_img from '@/assets/img/coliving/tenant/tenant-img.jpg';
 
 interface DataType {
   main_title: string;
@@ -18,16 +18,19 @@ interface DataType {
 
 const page_content: DataType = {
   main_title: `Grandeur Coliving`,
-  title: `Hey Landlord!`,
-  des: `Attention Landlords! Are you still serving your mortgage loan out of your own pocket money?
+  title: `Hey Tenant!`,
+  des: `You've come to right place, at Grandeur Coliving we give you the same promise we give our landlords - seamless tenant management!`,
 
-Let's change that now.`,
-  title2: `One Stop Property Management`,
-  des2: `Make your unit a high yielding room-rental property. Attract quality tenants who are in need of home away from home. Get the rental to cover your house loan and still get a positive income! Here's how we can help.`,
+  title2: `What's in it for you?`,
+  des2: `At Grandeur Coliving, we give you the same promise we give our landlords – seamless tenant management! Staying at our rental apartments, you have the comfort of a home. Grandeur Coliving strives to provide top notch tenant management so you don’t have to worry about forgetting your monthly obligations of renting away from home. We will ensure an A-to-Z assistance from your room viewing, checking-in, settling-in and and checking-out. 
+
+At Grandeur Coliving, you belong to a community of good company, friends and friendly tenant managers. Guaranteed security, privacy, yet we are ever-ready to assist you on any matters while you’re with us! Providing you with peace of mind that we’ve got your back! 
+
+Come aboard if you’re looking for a fun and inclusive co-living environment! Plenty of activities with your housemates, property-mates with movie nights, barbecue nights, mamak-nights, hiking weekends and some excursion trips together!`,
   info: [],
 };
 
-const LandlordIntro = () => {
+const TenantIntro = () => {
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
@@ -48,7 +51,7 @@ const LandlordIntro = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-5">
-            <Image src={landlord_img} alt="landlord-side" />
+            <Image src={tenant_img} alt="landlord-side" />
             <div className="cs_height_lg_30"></div>
           </div>
           <div className="col-md-7">
@@ -91,4 +94,4 @@ const LandlordIntro = () => {
   );
 };
 
-export default LandlordIntro;
+export default TenantIntro;
