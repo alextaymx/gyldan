@@ -2,6 +2,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useLayoutEffect } from 'react';
 
+import MouseMove from '@/components/common/MouseMove';
 // import animationTitle from "@/utils/animationTitle";
 // import { buttonAnimation } from "@/utils/buttonAnimation";
 import { ScrollSmoother } from '@/plugins';
@@ -29,7 +30,11 @@ function SmoothScrollProvider() {
     scrollSmother();
   }, []);
 
-  return <>{/* <MouseMove /> */}</>;
+  return (
+    <>
+      <MouseMove />
+    </>
+  );
 }
 
 export default SmoothScrollProvider;
