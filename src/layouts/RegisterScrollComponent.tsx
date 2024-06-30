@@ -6,32 +6,33 @@ import constants from '@/data/constants';
 import { ScrollSmoother, ScrollTrigger } from '@/plugins';
 import { scrollSmother } from '@/utils/scrollSmother';
 
-gsap.registerPlugin(ScrollSmoother);
-gsap.registerPlugin(ScrollTrigger);
+const safeToRender = typeof window !== `undefined` && constants.isProduction;
+if (safeToRender) {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollSmoother);
+}
 
 function RegisterScrollComponent() {
   useEffect(() => {
-    if (constants.isProduction) {
-      if (typeof window !== `undefined`) {
-        ScrollSmoother.create({
-          smooth: 1.35,
-          effects: true,
-          smoothTouch: false,
-          normalizeScroll: false,
-          ignoreMobileResize: true,
-        });
-      }
+    if (safeToRender) {
+      ScrollSmoother.create({
+        smooth: 1.35,
+        effects: true,
+        smoothTouch: false,
+        normalizeScroll: false,
+        ignoreMobileResize: true,
+      });
     }
   }, []);
 
   useEffect(() => {
     // buttonAnimation()
     // animationTitle()
-    if (constants.isProduction) {
+    if (safeToRender) {
       scrollSmother();
     }
   }, []);
-  return constants.isProduction ? <MouseMove /> : null;
+  return safeToRender ? <MouseMove /> : null;
 }
 
 export default RegisterScrollComponent;
