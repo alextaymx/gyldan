@@ -9,16 +9,13 @@ interface DataType {
   features: string[];
 }
 const hero_contact: DataType = {
-  title: `GYLDAN CORPORATE ADVISORY`,
-  description: `From consulting and strategy development to implementation and support, our comprehensive services can help your business thrive.`,
+  title: `GRANDEUR SUITES HOMESTAY MANAGEMENT`,
+  description: `From property maintenance to guest handling, our comprehensive services take care of all homestay management needs so you can enjoy peace of mind.`,
   features: [
-    `Company Formation & Secretarial Services`,
-    `Accounting`,
-    `Tax Advisory`,
-    `Business Development`,
-    `HR & Payroll Management`,
-    `Virtual Administration`,
-    `IT Management & Other Business Systems Integration`,
+    `Regular Maintenance & Cleaning`,
+    `Well-Curated Listings`,
+    `Admin Support`,
+    `Excellent Concierge Management`,
   ],
 };
 const { title, description, features } = hero_contact;

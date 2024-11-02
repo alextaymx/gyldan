@@ -48,6 +48,7 @@ const Gellary = ({ style_2 }: any) => {
           ))}
         </Swiper>
       </section>
+      <div className="cs_height_135 cs_height_lg_60"></div>
     </>
   );
 };

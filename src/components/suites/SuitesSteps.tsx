@@ -4,27 +4,27 @@ const stepContent = {
   stepData: [
     {
       id: `One`,
-      title: `Consultation & Assessment`,
-      description: `We begin with a thorough assessment of your specific needs and goals to ensure a tailored approach.`,
+      title: `Initial Consultation`,
+      description: `We start with an in-depth discussion to understand your property and goals, ensuring we offer a tailored homestay management solution.`,
     },
     {
       id: `Two`,
-      title: `Customized Strategy`,
-      description: `Based on our assessment, we develop a strategic plan that assigns the right team members and resources to your project.`,
+      title: `Customized Management Plan`,
+      description: `Based on our consultation, we create a custom plan to meet your specific needs, assigning the right resources to maximize property value and guest satisfaction.`,
     },
     {
       id: `Three`,
-      title: `Implementation & Support`,
-      description: `We execute the plan with precision and provide ongoing support, ensuring all services, including accounting, tax advisory, and business development, are optimized for your success.`,
+      title: `Implementation & Ongoing Support`,
+      description: `We manage all day-to-day operations, from guest handling to maintenance, providing seamless support to keep your property in top shape.`,
     },
     {
       id: `Four`,
-      title: `Tailored Solutions & Fees`,
-      description: `Our services are tailored to your unique scenario, with customized fees that reflect the specific needs and complexities of your business.`,
+      title: `Flexible Pricing Options`,
+      description: `Our pricing is tailored to your property type and service needs, with flexible options for fixed fees, percentage-based, or commission-based structures.`,
     },
   ],
-  title: `Our Approch`,
-  description: `GCA offers comprehensive corporate advisory services, including strategic consulting, seamless implementation, and ongoing support. Whether you're a startup or an established enterprise, our expertise covers business setup, accounting, taxation, compliance, and more. What sets us apart is our commitment to leveraging cutting-edge technology, ensuring our services are not only thorough but also globally accessible through digital platforms.`,
+  title: `Our Approach`,
+  description: `Grandeur Suites offers end-to-end homestay management services, covering everything from property maintenance to guest interactions. Our customized approach ensures that your property is well-maintained, while our expertise and technology simplify operations and boost your ROI.`,
 };
 
 const CorporateAdvisorySteps = () => {

@@ -52,7 +52,7 @@ const HeroHomeOne = () => {
                           className="cs_hero_btn cs_round_btn btn-item"
                         >
                           <span></span>
-                          Learn more
+                          Explore more
                         </Link>
                       </div>
                     </div>

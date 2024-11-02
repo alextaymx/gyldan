@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MarqueeAreaHomeOne = () => {
-  const movingCharacters = `Gyldan Corporate Advisory | Grandeur Coliving | Gyldan Properties | Dazz Talent | Gyldan Recruitment |`;
+  const movingCharacters = `Grandeur Coliving | Gyldan Properties |`;
   return (
     <>
       <div className="cs_moving_section_wrap cs_bold">

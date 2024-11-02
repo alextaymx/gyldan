@@ -1,9 +1,9 @@
 'use client';
 
 import AboutHomeFour from '@/components/about/AboutHomeFour';
-import CorporateAdvisoryIntro from '@/components/corporate-advisory/CorporateAdvisoryIntro';
-import CorporateAdvisoryServices from '@/components/corporate-advisory/CorporateAdvisoryServices';
-import CorporateAdvisorySteps from '@/components/corporate-advisory/CorporateAdvisorySteps';
+import SuitesIntro from '@/components/suites/SuitesIntro';
+import SuitesServices from '@/components/suites/SuitesServices';
+import SuitesSteps from '@/components/suites/SuitesSteps';
 import DetailsBanner from '@/components/details/DetailsBanner';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
@@ -20,10 +20,10 @@ const index = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <CorporateAdvisoryIntro />
-            <CorporateAdvisorySteps />
+            <SuitesIntro />
+            <SuitesSteps />
             <DetailsBanner />
-            <CorporateAdvisoryServices />
+            <SuitesServices />
             <AboutHomeFour />
           </main>
           <FooterOne />

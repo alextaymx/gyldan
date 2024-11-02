@@ -26,7 +26,7 @@ const footer_data: DataType = {
   whatsapp: businessInfo.whatsapp,
   whatsappLink: businessInfo.whatsappLink,
   location: businessInfo.address,
-  footer_info: `Welcome to Gyldan, your digital agency specializing in enhancing business success online. Partner with Gyldan to unlock new opportunities and drive growth today.`,
+  footer_info: `Your trusted and strategic partner in property management and investment. Partner with Gyldan to unlock new opportunities in residential and commercial real estate and drive growth in your property portfolio today.`,
   links: [
     { title: `HOME`, link: `/` },
     { title: `ABOUT`, link: `/about` },

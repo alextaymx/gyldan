@@ -20,24 +20,18 @@ const service_content: DataType = {
   service_data: [
     {
       id: 1,
-      title: `Gyldan Corporate Advisory`,
-      link: `/corporate-advisory`,
+      title: `Grandeur Coliving`,
+      link: `/grandeur-coliving`,
     },
     {
       id: 2,
-      title: `Grandeur Coliving`,
+      title: `Gyldan Properties`,
+      link: `/properties`,
     },
     {
       id: 3,
-      title: `Gyldan Properties`,
-    },
-    {
-      id: 4,
-      title: `Dazz Talent`,
-    },
-    {
-      id: 5,
-      title: `Gyldan Recruitment`,
+      title: `Grandeur Suites`,
+      link: `/grandeur-suites`,
     },
   ],
 };

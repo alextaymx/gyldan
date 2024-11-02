@@ -31,7 +31,7 @@ const index = () => {
 
             {/* <ServiceHomeOne /> */}
             <FeatureHomeTwo />
-            <MarqueeAreaHomeThree />
+            {/* <MarqueeAreaHomeThree /> */}
             <AboutHomeOne />
             {/* <PortfolioHomeOne /> */}
             {/* <AwardsHomeOne /> */}
@@ -44,7 +44,7 @@ const index = () => {
 
             <SubscribeHomeOne />
             {/* <BrandHomeOne style_2={true} /> */}
-            <BrandHomeOne style_2={false} />
+            {/* <BrandHomeOne style_2={false} /> */}
             {/* <MarqueeAreaHomeOne /> */}
           </main>
           <FooterOne />

@@ -12,9 +12,9 @@ interface DataType {
   des: string;
 }
 const about_content: DataType = {
-  subtitle: `Our Agency Story`,
-  title: `Simplifying Success Across Business and Individual Ventures`,
-  des: `At Gyldan, we are a dynamic force across five key domains: Business Process Outsourcing, Residential and Commercial Property Management, Talent Discovery, and Financial Advisory. Our commitment lies in simplifying success for businesses and individuals alike. From comprehensive business support services to expert property management, talent curation, and financial advisory solutions, we navigate the complexities, ensuring seamless and prosperous outcomes. With precision, innovation, and a client-centric approach, we empower you to thrive in your ventures. Welcome to a realm where success is not just a goal; it's a simplified, supported reality.`,
+  subtitle: `About Gyldan`,
+  title: `Simplifying Property Success Across Residential and Commercial Ventures`,
+  des: `At Gyldan, we are a dynamic force in property management, specializing in both residential and commercial sectors. Our commitment lies in simplifying property success for our clients. From comprehensive property management services to expert acquisition and disposal strategies, we navigate the complexities of real estate, ensuring seamless and prosperous outcomes. With precision, innovation, and a client-centric approach, we empower you to thrive in your property ventures. Welcome to a realm where property success is not just a goal; it's a simplified, supported reality.`,
 };
 const { subtitle, title, des } = about_content;
 
@@ -72,6 +72,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <div className="cs_height_135 cs_height_lg_60"></div>
     </>
   );
 };

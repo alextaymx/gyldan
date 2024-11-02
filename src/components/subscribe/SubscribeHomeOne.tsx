@@ -52,8 +52,8 @@ const SubscribeHomeOne = () => {
           <div className="cs_section_heading cs_style_1 cs_color_1 text-center">
             <div className="cs_section_heading_text">
               <h2 className="cs_section_title anim_text_upanddowns">
-                Stay Ahead With Our Top Notch <br />
-                Services
+                Stay Ahead With Our Latest <br />
+                Developments and Offers
               </h2>
             </div>
           </div>
@@ -77,6 +77,7 @@ const SubscribeHomeOne = () => {
           </form>
         </div>
       </div>
+      <div className="cs_height_140 cs_height_lg_70"></div>
     </>
   );
 };

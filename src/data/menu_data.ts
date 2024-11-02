@@ -19,12 +19,6 @@ export const menuData: MenuDataType[] = [
     has_dropdown: false,
   },
   {
-    id: 2,
-    title: `Corporate Advisory`,
-    link: `/corporate-advisory`,
-    has_dropdown: false,
-  },
-  {
     id: 3,
     title: `Grandeur Coliving`,
     link: `/grandeur-coliving`,
@@ -49,15 +43,9 @@ export const menuData: MenuDataType[] = [
     has_dropdown: false,
   },
   {
-    id: 5,
-    title: `Dazz Talent`,
-    link: `/dazz-talent`,
-    has_dropdown: false,
-  },
-  {
-    id: 6,
-    title: `Recruitment`,
-    link: `/recruitment`,
+    id: 2,
+    title: `Suites`,
+    link: `/suites`,
     has_dropdown: false,
   },
   {

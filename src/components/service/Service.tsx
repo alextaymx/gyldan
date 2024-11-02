@@ -9,22 +9,22 @@ const service_data: DataType[] = [
   {
     id: `one`,
     title: `Consultation`,
-    description: `We begin by understanding your business needs and objectives through in-depth consultations to tailor our services to your unique requirements.`,
+    description: `We begin by understanding your property management needs and goals, offering in-depth consultations to tailor our services for your residential and commercial properties.`,
   },
   {
     id: `Two`,
     title: `Strategy`,
-    description: `Our experts design a strategic plan that aligns with your goals, ensuring optimal solutions for corporate advisory, property management, and investments.`,
+    description: `Our team develops a customized management plan, ensuring your properties are well-maintained, maximizing asset value, and providing tenant satisfaction.`,
   },
   {
     id: `Three`,
     title: `Implementation`,
-    description: `We put the strategy into action, meticulously executing plans for business setup, property management, talent recruitment, and live performances.`,
+    description: `We execute the management plan, handling everything from property maintenance and leasing to tenant communication, ensuring smooth operations.`,
   },
   {
     id: `Four`,
     title: `Support`,
-    description: `We provide ongoing support and continuous optimization to ensure long-term success and efficiency in all aspects of your business operations.`,
+    description: `We provide ongoing support and regular reviews, optimizing your property's performance while addressing any issues to ensure long-term profitability and stability.`,
   },
 ];
 const Service = () => {

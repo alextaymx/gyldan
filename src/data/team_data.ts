@@ -1,6 +1,5 @@
 import { StaticImageData } from 'next/image';
 
-import team_1 from '@/assets/img/team/team1.jpeg';
 import team_avatar_1 from '@/assets/img/teamsimg1.jpg';
 import team_avatar_2 from '@/assets/img/teamsimg2.jpg';
 import team_avatar_3 from '@/assets/img/teamsimg3.jpg';
@@ -18,12 +17,6 @@ interface DataType {
 }
 
 const team_data: DataType[] = [
-  {
-    id: 0,
-    img: team_1,
-    avatar_name: `Adam Tan`,
-    designation: `Managing Director`,
-  },
   {
     id: 1,
     img: team_avatar_1,

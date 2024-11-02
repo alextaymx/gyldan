@@ -15,44 +15,30 @@ export const businessInfo = {
 export const aboutSlider: AboutDataType[] = [
   {
     img: `/assets/img/about_img.jpg`,
-    sub_title: `GYLDAN CORPORATE ADVISORY`,
-    title: `Comprehensive Corporate Advisory Services`,
-    des: `From consulting and strategy development to implementation and support, our comprehensive services can help your business thrive.
-  
-      At GCA, we provide end-to-end corporate advisory services, encompassing strategic consulting, seamless implementation, and ongoing support. Whether you're a startup or an established enterprise, our offerings span business setup, accounting, taxation, annual compliance, and beyond. What distinguishes us is our dedication to leveraging cutting-edge technology, ensuring our services are not only comprehensive but also accessible globally through digital platforms.`,
+    sub_title: `Introducing: Grandeur Suites - Hotel & AirBnb Management Service`,
+    title: `Convert to Short-term Accommodation`,
+    des: `Transform your investment property into a profitable short-term accommodation with Grandeur Suites. We offer comprehensive management services, from consulting and strategy development to implementation and support, ensuring your property thrives in the short-term rental market.`,
   },
   {
     img: `/assets/img/about_img.jpg`,
-    sub_title: `GRANDEUR COLIVING`,
-    title: `Redesigning Property Management: Grandeur Coliving`,
-    des: `Welcome to Grandeur Coliving, where both landlords and tenants find their perfect match. Our mission is to curate the ideal living space – a lucrative investment for landlords and a true home away from home for tenants. With a focus on redefining property management, we specialize in fostering a harmonious coliving community, ensuring an exceptional experience for all.`,
+    sub_title: `Introducing: Grandeur Suites - Hotel & AirBnb Management Service`,
+    title: `Attractive Income Models`,
+    des: `Discover attractive income models with Grandeur Suites. We curate the ideal living spaces that provide lucrative investments for landlords and a true home away from home for tenants, redefining property management with a focus on community and exceptional experiences.`,
   },
   {
     img: `/assets/img/about_img.jpg`,
-    sub_title: `GYLDAN PROPERTIES`,
-    title: `Strategic Property Solutions with Gyldan Properties`,
-    des: `Gyldan Properties, your premier Property Consultants, is a dynamic startup armed with profound insights into property investments, management, and development. With the ability to steer existing teams, enhance capabilities, and implement strategic measures, we optimize your bottom line by boosting revenues and minimizing operational costs across public and private sectors. Offering a singular point of solution tailored to meet precise property business needs, we are your dedicated partner for strategic property management.`,
-  },
-  {
-    img: `/assets/img/about_img.jpg`,
-    sub_title: `DAZZ TALENT`,
-    title: `Elevating Venues with Dazz Talent`,
-    des: `Dazz Talent specializes in providing exceptional live performers for cafes and bars, enhancing venue atmospheres with unforgettable musical experiences.`,
-  },
-  {
-    img: `/assets/img/about_img.jpg`,
-    sub_title: `GYLDAN RECRUITMENT`,
-    title: `Connecting Talent for Organizational Success`,
-    des: `Gyldan Recruitment is your partner in connecting businesses with top-tier professionals across various industries, ensuring strategic placements that drive organizational growth.`,
+    sub_title: `Introducing: Grandeur Suites - Hotel & AirBnb Management Service`,
+    title: `Owner Benefits All year-round`,
+    des: `Enjoy year-round benefits as a property owner with Grandeur Suites. Our expert team provides strategic property management, enhancing capabilities, optimizing revenues, and minimizing operational costs to ensure your property investment yields maximum returns.`,
   },
 ];
 
 export const companySlider: CompanyDataType[] = [
   {
     img: `/assets/img/hero_img_1.jpg`,
-    sub_title: `Gyldan Group`,
-    title: `Your Success. Our Expertise.`,
-    des: `Empowering success through expert business outsourcing, property management, talent discovery, and financial advisory solutions.`,
+    sub_title: ``,
+    title: `Your Property, Our Priority.`,
+    des: `Empowering success through expert property management solutions for residential and commercial properties, ensuring seamless operations and asset growth.`,
     link: `/service`,
   },
   {

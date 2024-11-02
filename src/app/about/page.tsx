@@ -29,16 +29,16 @@ const Index = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <BannerAbout />
-            <VideoHomeOne style_2={true} setIsVideoOpen={setIsVideoOpen} />
-            <FunFactHomeOne style_3={true} />
+            {/* <BannerAbout /> */}
+            {/* <VideoHomeOne style_2={true} setIsVideoOpen={setIsVideoOpen} /> */}
+            {/* <FunFactHomeOne style_3={true} /> */}
             <About />
-            <TeamHomeTwo style_2={true} style_3={true} />
+            {/* <TeamHomeTwo style_2={true} style_3={true} /> */}
             {/* <AwardsHomeOne style_2={true} /> */}
             <Testimonial />
             <Gellary style_2={true} />
-            <BrandHomeOne />
-            <MarqueeAreaHomeOne />
+            {/* <BrandHomeOne /> */}
+            {/* <MarqueeAreaHomeOne /> */}
           </main>
           <FooterOne />
         </div>

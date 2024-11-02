@@ -8,29 +8,19 @@ interface ServiceDataType {
 export const serviceData: ServiceDataType[] = [
   {
     id: 1,
-    title: `Corporate Advisory`,
-    description: `At Gyldan Corporate Advisory, we guide businesses through strategic consulting, implementation, and ongoing support. Our services include business setup, accounting, taxation, and compliance.`,
+    title: `Residential Property`,
+    description: `Experience the comfort and convenience of our residential properties. We provide top-notch tenant management, ensuring a seamless living experience from room viewing to checking out. Join a community of good company and enjoy a variety of activities with your housemates.`,
     link: `/corporate-advisory`,
   },
   {
     id: 2,
-    title: `Property Management`,
-    description: `Gyldan specializes in redefining property management with a focus on creating harmonious coliving communities, optimizing investments for landlords, and providing exceptional living spaces for tenants.`,
+    title: `Commercial Property`,
+    description: `Transform your commercial property investments with Gyldan. Our expertise in property management focuses on creating thriving business environments, optimizing landlord investments, and providing exceptional spaces for commercial tenants.`,
   },
   {
     id: 3,
-    title: `Property Investments`,
-    description: `Gyldan Properties offers strategic insights into property investments, management, and development across diverse sectors, aiming to optimize revenues and operational efficiency.`,
-  },
-  {
-    id: 4,
-    title: `Live Performances`,
-    description: `Dazz Talent specializes in providing exceptional live performers for cafes and bars, enhancing venue atmospheres with unforgettable musical experiences.`,
-  },
-  {
-    id: 5,
-    title: `Talent Recruitment`,
-    description: `Gyldan Recruitment connects businesses with top-tier professionals across industries, ensuring strategic placements that drive organizational success and growth.`,
+    title: `Property Acquisition & Disposal`,
+    description: `Navigate the complexities of property acquisition and disposal with Gyldan Properties. Our strategic insights into property investments, management, and development help you maximize revenues and operational efficiency across various sectors.`,
   },
 ];
 

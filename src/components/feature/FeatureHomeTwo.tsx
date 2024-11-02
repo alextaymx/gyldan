@@ -20,29 +20,28 @@ interface DataType {
 
 const feature_data: DataType = {
   subtitle: `Features`,
-  title: `Elevating Your Business to the Next Level with Gyldan Services`,
-  des: `Welcome to Gyldan Corporate Services! We specialize in helping businesses like yours succeed through a range of expert services. From corporate advisory and property management to talent recruitment and live performances, we provide the tools and expertise to elevate your business.`,
-  boxtitle: `Talent and Performance Excellence`,
-  box_des_1: `Top talent & performances`,
-  box_des_2: `Gyldan Recruitment connects businesses with top-tier professionals, ensuring strategic placements for growth. Additionally, Dazz Talent provides exceptional live performers to enhance venue atmospheres with unforgettable experiences.`,
+  title: `Elevating Your Property’s Potential with Gyldan's Strategic Property Solutions. `,
+  des: `Welcome to Gyldan's Strategic Property Solutions! We specialize in providing comprehensive property management services to ensure your investments thrive. From residential and commercial property management to property acquisition and disposal, we offer the expertise and tools to maximize your property's potential and elevate your business.`,
+  boxtitle: `Residential Property Management`,
+  box_des_1: `Strategic Property Solutions`,
+  box_des_2: `At Grandeur Coliving, our team specialize in comprehensive residential property management, ensuring seamless operations and exceptional tenant experiences. Our dedicated team handles everything from tenant screening to maintenance, maximizing your property's value and providing peace of mind both to you and to your tenants!`,
   features: [
     {
       id: 1,
-      title: `Comprehensive Business Solutions`,
-      des_1: `Guidance and support`,
-      des_2: `At Gyldan Corporate Advisory, we offer strategic consulting, implementation, and ongoing support to help businesses navigate setup, accounting, taxation, and compliance. Our expert guidance ensures your business thrives.`,
+      title: `Commercial Property Management`,
+      des_1: `Expert property management`,
+      des_2: `Gyldan Properties property management services focuses on optimizing the performance of your shoplots or commercial assets. We deliver tailored strategies to enhance occupancy, streamline operations, and maintain high standards, ensuring your commercial properties thrive in a competitive market.`,
     },
     {
       id: 2,
-      title: `Innovative Property and Investment Management`,
-      des_1: `Optimize revenue`,
-      des_2: `Gyldan specializes in property management and investment, providing insights and strategies to optimize revenue and efficiency. We create harmonious coliving communities and offer exceptional investment opportunities.`,
+      title: `Property Acquisition and Disposal`,
+      des_1: `Maximize returns`,
+      des_2: `Gyldan offers sound property acquisition and disposal solutions, guiding clients through every step of the process. Our knowledgeable team conducts thorough market analysis and strategic planning to maximize returns and facilitate smooth transactions for residential and commercial properties.`,
     },
   ],
-
   // for home five
   subtitle_2: `Why Choose Us`,
-  title_2: `Maximizing Your Online Presence Digital Marketing Mastery`,
+  title_2: `Maximizing Your Property's Potential with Expert Management`,
 };
 const { subtitle, title, des, boxtitle, box_des_1, box_des_2, features, subtitle_2, title_2 } =
   feature_data;
@@ -109,7 +108,7 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
               <div className="d-flex gap-4 align-items-center flex-wrap flex-lg-nowrap justify-content-center">
                 <div className="anim_text">
                   <p className="cs_font_16 cs_secend_section">{des}</p>
-                  <div className="cs_service_back_btn">
+                  {/* <div className="cs_service_back_btn">
                     <a href="/" className="cs_style_1 cs_color_1">
                       <span className="cs_font_18">Learn More</span>
                       {` `}
@@ -126,7 +125,7 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
                         ></path>
                       </svg>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="cs_startup_agency cs_card cs_mr_left">
                   <h6>{boxtitle}</h6>
