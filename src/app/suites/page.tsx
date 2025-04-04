@@ -1,10 +1,10 @@
 'use client';
 
 import AboutHomeFour from '@/components/about/AboutHomeFour';
+import DetailsBanner from '@/components/details/DetailsBanner';
 import SuitesIntro from '@/components/suites/SuitesIntro';
 import SuitesServices from '@/components/suites/SuitesServices';
 import SuitesSteps from '@/components/suites/SuitesSteps';
-import DetailsBanner from '@/components/details/DetailsBanner';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import Wrapper from '@/layouts/Wrapper';

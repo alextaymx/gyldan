@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import OffersToTenantDetails from '@/app/grandeur-coliving/tenant/OffersToTenantDetails';
 import image_1 from '@/assets/img/coliving/tenant/tenant-offers.png';
 
 const OffersToTenant = () => {
@@ -11,12 +12,15 @@ const OffersToTenant = () => {
         <div className="container">
           <div className="cs_section_heading cs_style_1">
             <div className="cs_section_heading_text">
-              <h2 className="cs_section_title_2 anim_heading_title">What to expect? </h2>
+              <h2 className="text-center cs_section_title_2 anim_heading_title">
+                What to expect?{' '}
+              </h2>
             </div>
           </div>
           <div className="cs_height_100 cs_height_lg_50"></div>
 
-          <Image src={image_1} alt="offers" className="w-full" />
+          {/* <Image src={image_1} alt="offers" className="w-full" /> */}
+          <OffersToTenantDetails />
         </div>
       </section>
 
@@ -26,7 +30,7 @@ const OffersToTenant = () => {
         <div className="cs_back_to_services_btn">
           <Link
             href="/grandeur-coliving"
-            className="cs_style_1 flex justify-center items-center gap-3"
+            className="flex items-center justify-center gap-3 cs_style_1"
           >
             <span>Back To Coliving</span>
             <svg

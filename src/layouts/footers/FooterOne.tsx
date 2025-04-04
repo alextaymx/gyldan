@@ -30,9 +30,9 @@ const footer_data: DataType = {
   links: [
     { title: `HOME`, link: `/` },
     { title: `ABOUT`, link: `/about` },
-    { title: `SERVICES`, link: `/service` },
-    { title: `PORTFOLIO`, link: `/portfolio` },
-    { title: `BLOG`, link: `/blog` },
+    // { title: `SERVICES`, link: `/service` },
+    // { title: `PORTFOLIO`, link: `/portfolio` },
+    // { title: `BLOG`, link: `/blog` },
     { title: `CONTACT US`, link: `/contact` },
   ],
 };
@@ -141,7 +141,7 @@ const FooterOne = () => {
             ))}
           </ul>
         </div>
-        <div className="cs_copyright text-center">
+        <div className="text-center cs_copyright">
           <div className="container">
             {` `}
             <CopyRight />

@@ -22,7 +22,11 @@ const service_faq_content: DataType = {
     {
       id: `Two`,
       question: `Why Choose Our Homestay Management Services?`,
-      answer: `As a reputable homestay management company in Malaysia, we ensure that all homeowners' needs are met. Our partnership with Tokeet allows homeowners full control over tracking transactions, guest information, and more, while we handle the day-to-day responsibilities.`,
+      answer: `As a growing homestay management startup in Malaysia, 
+we are dedicated to meeting homeowners' needs with our comprehensive services. Using our 
+proprietary hotel management software, owners can access key performance metrics such as 
+average occupancy rate, earnings, and maintenance logs, ensuring transparency and effective 
+management.`,
     },
     {
       id: `Three`,
@@ -32,7 +36,20 @@ const service_faq_content: DataType = {
     {
       id: `Four`,
       question: `How is Pricing Determined for Homestay Management?`,
-      answer: `Our pricing includes options such as a fixed monthly fee, a percentage of total rental income, or a commission-based structure. The typical monthly fee is RM400, with percentage-based charges ranging from 20% to 30% of rental income.`,
+      answer: `Our pricing includes options such as a fixed monthly fee, a 
+percentage of total rental income, or a commission-based structure. The typical monthly fee is 
+RM500, with percentage-based charges ranging from 15% to 20% of revenue.`,
+    },
+    {
+      id: `Five`,
+      question: `Will you provide design, renovation and improvement service?`,
+      answer: `Yes, we offer comprehensive design, renovation, and improvement services tailored to your 
+needs. Whether it's partial upgrades or a full-scale renovation and furnishing, our team ensures your 
+property stands out to potential guests.
+
+Pricing is based on factors such as unit size, design complexity, and the scope of work required. To 
+make it even more convenient, we provide flexible payment terms, including 0% installment plans 
+for up to 3 years. This allows you to enhance your property without worrying about upfront costs.`,
     },
   ],
   title: `Services Offered`,
@@ -46,7 +63,7 @@ const service_faq_content: DataType = {
 };
 const { faq_data, title, description, features } = service_faq_content;
 
-const CorporateAdvisoryServices = () => {
+const SuitesServices = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const toggleAccordion = (index: number) => {
@@ -63,7 +80,11 @@ const CorporateAdvisoryServices = () => {
               {faq_data.map((item, i) => (
                 <div
                   key={i}
-                  onClick={() => toggleAccordion(i)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggleAccordion(i);
+                  }}
                   className={`cs_accordion_item ${i === activeIndex ? `active cs_icon` : ``}`}
                 >
                   <div className="cs_accordion_header">
@@ -85,7 +106,9 @@ const CorporateAdvisoryServices = () => {
                     </svg>
                   </div>
 
-                  <div className={`cs_accordion_body ${i === activeIndex ? `` : `d-none`}`}>
+                  <div
+                    className={`cs_accordion_body ${i === activeIndex ? `` : `d-none`} whitespace-pre`}
+                  >
                     {item.answer}
                   </div>
                 </div>
@@ -130,4 +153,4 @@ const CorporateAdvisoryServices = () => {
   );
 };
 
-export default CorporateAdvisoryServices;
+export default SuitesServices;

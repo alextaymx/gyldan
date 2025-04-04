@@ -15,19 +15,19 @@ export const businessInfo = {
 export const aboutSlider: AboutDataType[] = [
   {
     img: `/assets/img/about_img.jpg`,
-    sub_title: `Introducing: Grandeur Suites - Hotel & AirBnb Management Service`,
+    sub_title: `Introducing: Grandeur Suites - Hotel & Homestay Management Service`,
     title: `Convert to Short-term Accommodation`,
     des: `Transform your investment property into a profitable short-term accommodation with Grandeur Suites. We offer comprehensive management services, from consulting and strategy development to implementation and support, ensuring your property thrives in the short-term rental market.`,
   },
   {
     img: `/assets/img/about_img.jpg`,
-    sub_title: `Introducing: Grandeur Suites - Hotel & AirBnb Management Service`,
+    sub_title: `Introducing: Grandeur Suites - Hotel & Homestay Management Service`,
     title: `Attractive Income Models`,
     des: `Discover attractive income models with Grandeur Suites. We curate the ideal living spaces that provide lucrative investments for landlords and a true home away from home for tenants, redefining property management with a focus on community and exceptional experiences.`,
   },
   {
     img: `/assets/img/about_img.jpg`,
-    sub_title: `Introducing: Grandeur Suites - Hotel & AirBnb Management Service`,
+    sub_title: `Introducing: Grandeur Suites - Hotel & Homestay Management Service`,
     title: `Owner Benefits All year-round`,
     des: `Enjoy year-round benefits as a property owner with Grandeur Suites. Our expert team provides strategic property management, enhancing capabilities, optimizing revenues, and minimizing operational costs to ensure your property investment yields maximum returns.`,
   },

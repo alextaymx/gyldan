@@ -40,9 +40,9 @@ const index = () => {
             {/* <VideoHomeOne setIsVideoOpen={setIsVideoOpen} /> */}
             {/* <Testimonial /> */}
 
-            <BlogHomeOne />
+            {/* <BlogHomeOne /> */}
 
-            <SubscribeHomeOne />
+            {/* <SubscribeHomeOne /> */}
             {/* <BrandHomeOne style_2={true} /> */}
             {/* <BrandHomeOne style_2={false} /> */}
             {/* <MarqueeAreaHomeOne /> */}

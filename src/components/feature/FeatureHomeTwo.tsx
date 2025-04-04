@@ -34,9 +34,13 @@ const feature_data: DataType = {
     },
     {
       id: 2,
-      title: `Property Acquisition and Disposal`,
-      des_1: `Maximize returns`,
-      des_2: `Gyldan offers sound property acquisition and disposal solutions, guiding clients through every step of the process. Our knowledgeable team conducts thorough market analysis and strategic planning to maximize returns and facilitate smooth transactions for residential and commercial properties.`,
+      title: `Hotel & Homestay Management Services`,
+      des_1: `Seamless Guest Experiences`,
+      des_2: `Grandeur Suites specializes in end-to-end management solutions for homestays and short-term
+accommodations. From property maintenance to guest handling, we ensure your property is
+meticulously cared for and your guests receive exceptional service. With well-curated listings,
+regular upkeep, and professional concierge support, we take the hassle out of hosting while
+maximizing your returns and elevating guest satisfaction.`,
     },
   ],
   // for home five
@@ -88,7 +92,7 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
 
         <div className="container">
           <div className={`row ${style_2 ? `flex-column flex-lg-row align-items-center` : ``}`}>
-            <div className="col-lg-8 col-12">
+            <div className="col-lg-7 col-12">
               <div className="cs_section_heading cs_style_1">
                 <div className="cs_section_heading_text">
                   <div className="cs_section_subtitle anim_div_ShowZoom">
@@ -105,9 +109,9 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
                 <div className="cs_height_70"></div>
               )}
 
-              <div className="d-flex gap-4 align-items-center flex-wrap flex-lg-nowrap justify-content-center">
+              <div className="flex-wrap gap-4 d-flex align-items-center flex-lg-nowrap justify-content-center">
                 <div className="anim_text">
-                  <p className="cs_font_16 cs_secend_section">{des}</p>
+                  <p className="text-justify cs_font_16 cs_secend_section">{des}</p>
                   {/* <div className="cs_service_back_btn">
                     <a href="/" className="cs_style_1 cs_color_1">
                       <span className="cs_font_18">Learn More</span>
@@ -132,12 +136,13 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
                   <div className="d-flex align-items-center">
                     <div className="cs_hr"></div>
                     <p className="cs_font_16 cs_normal cs_mp0 text-nowrap">{box_des_1}</p>
+                    {/* <p className="cs_font_16 cs_normal cs_mp0">{box_des_1}</p> */}
                   </div>
-                  <p className="cs_font_16 cs_mp0">{box_des_2}</p>
+                  <p className="text-justify cs_font_16 cs_mp0">{box_des_2}</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-12">
+            <div className="col-lg-5 col-12">
               <div className="cs_startup_agency">
                 {features.map((item, i) => (
                   <div key={i} className="cs_startup_agency cs_card">
@@ -145,8 +150,9 @@ const FeatureHomeTwo = ({ style_2 }: any) => {
                     <div className="d-flex align-items-center">
                       <div className="cs_hr"></div>
                       <p className="cs_font_16 cs_normal cs_mp0 text-nowrap">{item.des_1}</p>
+                      {/* <p className="cs_font_16 cs_normal cs_mp0">{item.des_1}</p> */}
                     </div>
-                    <p className="cs_font_16 cs_mp0">{item.des_2}</p>
+                    <p className="text-justify cs_font_16 cs_mp0">{item.des_2}</p>
                   </div>
                 ))}
               </div>
