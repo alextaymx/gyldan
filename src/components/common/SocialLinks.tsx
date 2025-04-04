@@ -41,7 +41,7 @@ const copy_right_text: copy_right_text_type = {
 const { copy_left, copy_right } = copy_right_text;
 export const CopyRight = () => {
   return (
-    <div className="flex flex-col justify-between gap-5 cs_calibri_font xl:flex-row">
+    <div className="flex flex-col justify-between gap-5 xl:flex-row cs_open_sans_font">
       <div className=" font-extralight">{copy_left}</div>
       <div>{copy_right}</div>
     </div>
