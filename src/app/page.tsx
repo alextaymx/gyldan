@@ -13,10 +13,6 @@ import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import Wrapper from '@/layouts/Wrapper';
 
-// export const metadata = {
-//   title: "Gyldan - Management & Consulting Firm | Gyldan Group",
-// };
-
 const index = () => {
   // const [isVideoOpen, setIsVideoOpen] = useState<boolean>(false);
   return (
