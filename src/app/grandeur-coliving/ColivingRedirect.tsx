@@ -26,15 +26,15 @@ function ColivingRedirect({}: Props) {
                   Learn more about our coliving services
                 </h3>
               </div>
-              <div className="grid grid-cols-2 gap-40 coliving-redirect">
+              <div className="grid lg:gap-40 lg:grid-cols-2 coliving-redirect">
                 {items.map((item) => {
                   return (
                     <div
                       key={item.href}
-                      className="cs_section_heading_right cs_btn_anim hover:scale-110 transition-transform duration-1000"
+                      className="transition-transform duration-1000 cs_section_heading_right cs_btn_anim hover:scale-110"
                     >
                       <Link href={item.href} className="cs_btn cs_style_1">
-                        <span>{item.title}</span>
+                        <span className="w-28">{item.title}</span>
                         <svg
                           width="19"
                           height="13"

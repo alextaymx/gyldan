@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import '@/styles/index.scss';
 
-import React from 'react';
 import { Metadata, Viewport } from 'next';
+import React from 'react';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -35,10 +35,11 @@ export const metadata: Metadata = {
     siteName: 'Gyldan',
     images: [
       {
-        url: '/assets/img/logo/og-image.jpg',
+        url: '/assets/img/logo/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Gyldan - Premium Coliving & Property Management',
+        type: 'image/png',
       },
     ],
     locale: 'en_US',
