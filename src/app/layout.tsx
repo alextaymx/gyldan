@@ -10,17 +10,28 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gyldan.com'),
+  metadataBase: new URL('https://gyldan.com.my'),
   title: 'Gyldan | Premium Coliving & Property Management Solutions',
   description:
     'Gyldan offers premium coliving spaces through Grandeur Coliving, luxury property management with Gyldan Properties, and upscale accommodations at Grandeur Suites. Experience excellence in modern living.',
   keywords:
     'coliving, property management, luxury suites, Grandeur Coliving, Gyldan Properties, Grandeur Suites, premium accommodations, modern living',
+  authors: [{ name: 'Gyldan' }],
+  creator: 'Gyldan',
+  publisher: 'Gyldan',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: 'https://gyldan.com.my',
+  },
   openGraph: {
     title: 'Gyldan | Premium Coliving & Property Management Solutions',
     description:
       'Gyldan offers premium coliving spaces through Grandeur Coliving, luxury property management with Gyldan Properties, and upscale accommodations at Grandeur Suites. Experience excellence in modern living.',
-    url: 'https://gyldan.com',
+    url: 'https://gyldan.com.my',
     siteName: 'Gyldan',
     images: [
       {
@@ -48,6 +59,9 @@ export const metadata: Metadata = {
     icon: '/assets/img/logo/favicon.ico',
     apple: '/assets/img/logo/apple-touch-icon.png',
   },
+  // verification: {
+  //   google: 'your-google-site-verification',
+  // },
 };
 
 export default function RootLayout({
