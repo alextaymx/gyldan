@@ -10,7 +10,7 @@ interface DataType {
   features: string[];
 }
 const hero_contact: DataType = {
-  title: `Grandeur Properties`,
+  title: `Gyldan Properties`,
   description: `At Gyldan Properties, we specialize in providing exceptional commercial property management and real estate investment services. Whether you're a property owner, a tenant, or looking for your next investment opportunity, we're here to guide you through every step of the process with professionalism and expertise. `,
   features: [
     'Commercial Management',
@@ -79,42 +79,6 @@ function PropertyIntro({}: Props) {
           </div>
         </div>
         <div className="cs_height_60 cs_height_lg_30"></div>
-      </section>
-
-      <section
-        className="cs_property_showcase"
-        style={{
-          backgroundImage: `url(${banner_img.src})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          position: 'relative',
-          padding: '120px 0',
-        }}
-      >
-        <div
-          className="cs_overlay"
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: 'rgba(0,0,0,0.6)',
-          }}
-        ></div>
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <div className="cs_property_content text-center">
-            <h2 className="cs_section_title cs_fs_72 cs_white_color mb-4 anim_text_writting">
-              Gyldan Properties: Your Commercial Property Partner
-            </h2>
-            <h3 className="cs_fs_32 cs_white_color mb-5 anim_text">
-              Specializing in Complex Shoplots, Warehouses, Lands, and Malls.
-            </h3>
-            <Link href="/properties/gallery" className="cs_btn cs_style_1 cs_btn_lg">
-              <span>Explore Our Properties</span>
-            </Link>
-          </div>
-        </div>
       </section>
     </>
   );

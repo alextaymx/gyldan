@@ -5,6 +5,8 @@ import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import Wrapper from '@/layouts/Wrapper';
 
+import PropertyPortfolio from './PropertyPortfolio';
+
 type Props = {};
 
 function Index({}: Props) {
@@ -15,8 +17,9 @@ function Index({}: Props) {
         <div id="smooth-content">
           <main>
             <PropertyIntro />
+            <PropertyPortfolio />
 
-            <PropertyHeadline />
+            {/* <PropertyHeadline /> */}
 
             <ComingSoon />
           </main>
